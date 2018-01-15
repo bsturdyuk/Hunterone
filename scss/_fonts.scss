@@ -1,1 +1,41 @@
 // _fonts.scss
+
+@font-face {
+    font-family: 'SFU-Futura';
+    src: url('../fonts/SFUFuturaBold.woff2') format('woff2'),
+        url('../fonts/SFUFuturaBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open-Sans';
+    src: url('../fonts/OpenSans.woff2') format('woff2'),
+        url('../fonts/OpenSans.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open-Sans';
+    src: url('../fonts/OpenSans-Bold.woff2') format('woff2'),
+        url('../fonts/OpenSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Myriad-Pro';
+    src: url('../fonts/MyriadPro-Regular.woff2') format('woff2'),
+        url('../fonts/MyriadPro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Brandon-Grotesque';
+    src: url('../fonts/BrandonGrotesque-Black.woff2') format('woff2'),
+        url('../fonts/BrandonGrotesque-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}

@@ -1,0 +1,231 @@
+/* CTA */
+#parent {
+  position: relative;
+  height: 60px;
+  width: auto;
+  font-family: 'Brandon-Grotesque';
+  text-transform: uppercase;
+  font-size: 52px;
+  color: white;
+  display: block;
+  margin: 0px 5%;
+  transition: all .33s ease-in-out;
+  padding: 0;
+  line-height: 64px; }
+
+#wrapper {
+  position: absolute;
+  width: auto;
+  height: auto;
+  transition: all .33s ease-in; }
+
+#child {
+  position: absolute;
+  width: 550px;
+  background-color: transparent;
+  transition: inherit;
+  top: -10px;
+  left: -200%; }
+
+#wrapper:hover #child {
+  transform: translateX(100%); }
+
+@font-face {
+  font-family: 'SFU-Futura';
+  src: url("../fonts/SFUFuturaBold.woff2") format("woff2"), url("../fonts/SFUFuturaBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+@font-face {
+  font-family: 'Open-Sans';
+  src: url("../fonts/OpenSans.woff2") format("woff2"), url("../fonts/OpenSans.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Open-Sans';
+  src: url("../fonts/OpenSans-Bold.woff2") format("woff2"), url("../fonts/OpenSans-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+@font-face {
+  font-family: 'Myriad-Pro';
+  src: url("../fonts/MyriadPro-Regular.woff2") format("woff2"), url("../fonts/MyriadPro-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Brandon-Grotesque';
+  src: url("../fonts/BrandonGrotesque-Black.woff2") format("woff2"), url("../fonts/BrandonGrotesque-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal; }
+* {
+  margin: 0;
+  padding: 0; }
+
+/* Icon 1 */
+#nav-icon {
+  width: 40px;
+  height: 25px;
+  position: relative;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+  background-color: transparent;
+  border: none; }
+
+#nav-icon span {
+  display: block;
+  position: absolute;
+  height: 5px;
+  width: 100%;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out; }
+
+/* Icon 3 */
+#nav-icon span:nth-child(1) {
+  top: 0px; }
+
+#nav-icon span:nth-child(2), #nav-icon span:nth-child(3) {
+  top: 12px; }
+
+#nav-icon span:nth-child(4) {
+  top: 24px; }
+
+#nav-icon.full-menu--open span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%; }
+
+#nav-icon.full-menu--open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+#nav-icon.full-menu--open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg); }
+
+#nav-icon.full-menu--open span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%; }
+
+/*
+ * Full menu
+ * ----------
+ * Styles in this section are very
+ * important and you have to implement
+ * them if you want for your
+ * navigation to work properly.
+ *
+ */
+.full-menu {
+  visibility: hidden;
+  display: table;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  background-color: rgba(255, 255, 255, 0.92);
+  -webkit-transform: scale(0.85);
+  -ms-transform: scale(0.85);
+  transform: scale(0.85);
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out; }
+
+.full-menu--open {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  background-color: #ED2F48;
+  z-index: 9999; }
+
+.full-menu--transition {
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out; }
+
+.full-menu--middle {
+  display: table-cell;
+  vertical-align: middle; }
+  .full-menu--middle .main-nav {
+    list-style-type: none;
+    text-align: left;
+    padding: 0px; }
+    .full-menu--middle .main-nav li {
+      text-decoration: none; }
+      .full-menu--middle .main-nav li a {
+        font-family: 'Brandon-Grotesque';
+        text-transform: uppercase;
+        font-size: 52px;
+        color: white;
+        display: block;
+        margin: 0px 5%;
+        transition: all .33s ease-in-out;
+        padding: 0;
+        line-height: 64px; }
+        .full-menu--middle .main-nav li a:hover, .full-menu--middle .main-nav li a:active, .full-menu--middle .main-nav li a:focus {
+          text-decoration: none;
+          outline: none; }
+
+.menu-toggle {
+  position: relative;
+  left: 5%;
+  top: 20px; }
+  .menu-toggle span {
+    background-color: black; }
+
+.full-menu--open span {
+  background-color: white; }
+
+.nav-arrow {
+  width: 640px;
+  position: relative;
+  left: -1100px;
+  height: auto;
+  top: -8px; }
+
+/*==========  Non-Mobile First Method  ==========*/
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+  .navbar {
+    border-bottom: 1px solid red; } }
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  .navbar {
+    border-bottom: 1px solid blue; } }
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  .navbar {
+    border-bottom: 1px solid green; } }
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .navbar {
+    border-bottom: 1px solid yellow; } }
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+  .navbar {
+    border-bottom: 1px solid pink; } }
+body {
+  height: auto;
+  width: 100%; }
+
+/*# sourceMappingURL=master.css.map */

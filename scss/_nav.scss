@@ -1,1 +1,183 @@
 // _nav.scss
+
+body {
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Icon 1 */
+
+#nav-icon {
+  width: 40px;
+  height: 25px;
+  position: relative;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+#nav-icon span {
+  display: block;
+  position: absolute;
+  height: 5px;
+  width: 100%;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+/* Icon 3 */
+#nav-icon span:nth-child(1) {
+  top: 0px;
+}
+#nav-icon span:nth-child(2),#nav-icon span:nth-child(3) {
+  top: 12px;
+}
+#nav-icon span:nth-child(4) {
+  top: 24px;
+}
+
+#nav-icon.full-menu--open span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+#nav-icon.full-menu--open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+#nav-icon.full-menu--open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+#nav-icon.full-menu--open span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+/*
+ * Full menu
+ * ----------
+ * Styles in this section are very
+ * important and you have to implement
+ * them if you want for your
+ * navigation to work properly.
+ *
+ */
+
+ .full-menu {
+   visibility: hidden;
+   display: table;
+   position: fixed;
+   top: 0;
+   left: 0;
+   height: 100%;
+   width: 100%;
+   opacity: 0;
+   background-color: rgba(255, 255, 255, 0.92);
+   -webkit-transform: scale(0.85);
+   -ms-transform: scale(0.85);
+   transform: scale(0.85);
+   -webkit-transition: all 200ms ease-in-out;
+   transition: all 200ms ease-in-out;
+ }
+ .full-menu--open {
+   visibility: visible;
+   opacity: 1;
+   -webkit-transform: scale(1);
+   -ms-transform: scale(1);
+   transform: scale(1);
+   background-color: $hunter-pink;
+   z-index: 9999;
+ }
+ .full-menu--transition {
+   -webkit-transition: all 200ms ease-in-out;
+   transition: all 200ms ease-in-out;
+ }
+ .full-menu--middle {
+   display: table-cell;
+   vertical-align: middle;
+
+   .main-nav {
+     list-style-type: none;
+     text-align: left;
+     padding: 0px;
+
+     li {
+       text-decoration: none;
+
+       a {
+          font-family: 'Brandon-Grotesque';
+          text-transform: uppercase;
+          font-size: 52px;
+          color: white;
+          display: block;
+          margin: 0px 5%;
+          transition: all .33s ease-in-out;
+          padding: 0;
+          line-height: 64px;
+
+          // &:hover {
+          //   .nav-arrow {
+          //      transition: all .33s ease-in 0s;
+          //      -moz-transform: translateX(620px) translateY(0px);
+          //      -webkit-transform: translateX(620px) translateY(0px);
+          //      -o-transform: translateX(620px) translateY(0px);
+          //      -ms-transform: translateX(620px) translateY(0px);
+          //      transform: translateX(620px) translateY(0px);
+          //   }
+          // }
+
+          &:hover, &:active, &:focus {
+            text-decoration: none;
+            outline: none;
+         }
+       }
+     }
+   }
+ }
+ .menu-toggle {
+   position: relative;
+   left: 5%;
+   top: 20px;
+
+   span {
+     background-color: black;
+   }
+ }
+ .full-menu--open span {
+   background-color: white;
+ }
+
+  .nav-arrow {
+    width: 640px;
+    position: relative;
+    left: -1100px;
+    height: auto;
+    top: -8px;
+  }

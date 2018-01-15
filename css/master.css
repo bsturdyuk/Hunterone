@@ -11,7 +11,7 @@ body {
   font-size: 52px;
   color: white;
   display: block;
-  margin: 0px 5%;
+  margin: 0px 10%;
   transition: all .33s ease-in-out;
   padding: 0;
   line-height: 64px; }
@@ -27,11 +27,11 @@ body {
   width: 550px;
   background-color: transparent;
   transition: inherit;
-  top: -10px;
+  top: 17px;
   left: -1300px; }
 
 #wrapper:hover #child {
-  transform: translateX(225%); }
+  transform: translateX(220%); }
 
 @font-face {
   font-family: 'SFU-Futura';
@@ -191,7 +191,7 @@ body {
 
 .menu-toggle {
   position: relative;
-  left: 5%;
+  left: 10%;
   top: 20px; }
   .menu-toggle span {
     background-color: white; }

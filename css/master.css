@@ -1,3 +1,6 @@
+body {
+  background-color: #151529; }
+
 /* CTA */
 #parent {
   position: relative;
@@ -25,10 +28,10 @@
   background-color: transparent;
   transition: inherit;
   top: -10px;
-  left: -200%; }
+  left: -1300px; }
 
 #wrapper:hover #child {
-  transform: translateX(100%); }
+  transform: translateX(225%); }
 
 @font-face {
   font-family: 'SFU-Futura';
@@ -191,7 +194,7 @@
   left: 5%;
   top: 20px; }
   .menu-toggle span {
-    background-color: black; }
+    background-color: white; }
 
 .full-menu--open span {
   background-color: white; }
@@ -199,7 +202,6 @@
 .nav-arrow {
   width: 640px;
   position: relative;
-  left: -1100px;
   height: auto;
   top: -8px; }
 

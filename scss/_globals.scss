@@ -1,5 +1,8 @@
 // _globals.scss
 
+body {
+  background-color: $hunter-blue;
+}
 
 
 /* CTA */
@@ -29,8 +32,8 @@
   background-color: transparent;
   transition: inherit;
   top: -10px;
-  left: -200%;
+  left: -1300px;
 }
 #wrapper:hover #child {
-    transform: translateX(100%);
+    transform: translateX(225%);
 }

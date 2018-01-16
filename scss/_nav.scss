@@ -1,16 +1,6 @@
 // _nav.scss
 
-body {
-
-}
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
 /* Icon 1 */
-
 #nav-icon {
   width: 40px;
   height: 25px;
@@ -92,7 +82,7 @@ body {
 
  .full-menu {
    visibility: hidden;
-   display: table;
+   display: block;
    position: fixed;
    top: 0;
    left: 0;
@@ -105,6 +95,7 @@ body {
    transform: scale(0.85);
    -webkit-transition: all 200ms ease-in-out;
    transition: all 200ms ease-in-out;
+   z-index: -100 !important;
  }
  .full-menu--open {
    visibility: visible;
@@ -113,20 +104,26 @@ body {
    -ms-transform: scale(1);
    transform: scale(1);
    background-color: $hunter-pink;
-   z-index: 9999;
+   z-index: 9999 !important;
  }
  .full-menu--transition {
    -webkit-transition: all 200ms ease-in-out;
    transition: all 200ms ease-in-out;
  }
  .full-menu--middle {
-   display: table-cell;
-   vertical-align: middle;
+   display: block;
+   height: 100%;
+   position: relative;
 
    .main-nav {
      list-style-type: none;
      text-align: left;
      padding: 0px;
+     height: 100%;
+    position: absolute;
+    top: 30%;
+    left: 0%;
+    width: 100%;
 
      li {
        text-decoration: none;
@@ -142,17 +139,6 @@ body {
           padding: 0;
           line-height: 64px;
 
-          // &:hover {
-          //   .nav-arrow {
-          //      transition: all .33s ease-in 0s;
-          //      -moz-transform: translateX(620px) translateY(0px);
-          //      -webkit-transform: translateX(620px) translateY(0px);
-          //      -o-transform: translateX(620px) translateY(0px);
-          //      -ms-transform: translateX(620px) translateY(0px);
-          //      transform: translateX(620px) translateY(0px);
-          //   }
-          // }
-
           &:hover, &:active, &:focus {
             text-decoration: none;
             outline: none;
@@ -163,7 +149,7 @@ body {
  }
  .menu-toggle {
    position: relative;
-   left: 10%;
+   left: 6%;
    top: 20px;
 
    span {
@@ -179,4 +165,38 @@ body {
     position: relative;
     height: auto;
     top: -8px;
+  }
+
+
+  /* CTA */
+  #parent {
+    position: relative;
+    height: 60px;
+    width: auto;
+    font-family: 'Brandon-Grotesque';
+    text-transform: uppercase;
+    font-size: 52px;
+    color: white;
+    display: block;
+    margin: 0px 10%;
+    transition: all .33s ease-in-out;
+    padding: 0;
+    line-height: 64px;
+  }
+  #wrapper {
+    position: absolute;
+    width: auto;
+    height: auto;
+    transition: all .33s ease-in;
+  }
+  #child {
+    position: absolute;
+    width: 550px;
+    background-color: transparent;
+    transition: inherit;
+    top: 17px;
+    left: -1300px;
+  }
+  #wrapper:hover #child {
+      transform: translateX(220%);
   }

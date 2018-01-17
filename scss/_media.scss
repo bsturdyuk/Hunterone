@@ -3,27 +3,27 @@
 
     /* Large Devices, Wide Screens */
     @media only screen and (max-width : 1200px) {
-    	.menu-toggle { border-bottom: 1px solid red !important; }
+    	#nav-icon span:nth-child(4) { background-color: red !important; }
 
     }
 
     /* Medium Devices, Desktops */
     @media only screen and (max-width : 992px) {
-    	.menu-toggle { border-bottom: 1px solid blue !important; }
+    	#nav-icon span:nth-child(4) { background-color: blue !important; }
 
     }
 
     /* Small Devices, Tablets */
     @media only screen and (max-width : 768px) {
-    	.menu-toggle { border-bottom: 1px solid green !important; }
+    	#nav-icon span:nth-child(4) { background-color: green !important; }
     }
 
     /* Extra Small Devices, Phones */
     @media only screen and (max-width : 480px) {
-    	.menu-toggle { border-bottom: 1px solid yellow !important; }
+    	#nav-icon span:nth-child(4) { background-color: yellow !important; }
     }
 
     /* Custom, iPhone Retina */
     @media only screen and (max-width : 320px) {
-        .menu-toggle { border-bottom: 1px solid pink !important; } 
+        #nav-icon span:nth-child(4) { background-color: pink !important; } 
     }

@@ -18,16 +18,366 @@
     }
   }
 
-  .circle-container {
-    position: relative;
-    right: -50%;
-    top: 300px;
-    width: 100%;
 
-    .circle-animation {
-      position: absolute;
-      width: 100%;
-      height: 100%;
+  ////////////////////////////// Circle Section ///////////////////////////////////////////////
+  .circle-section {
+    height: 700px;
+    display: block;
+
+    .circle-container {
+      display: block;
+      width: 1000px;
+      height: 1000px;
+      position: relative;
+      right: -30%;
+      top: -120px;
+      z-index: 100;
+
+      .text-container {
+        width: 420px;
+        z-index: 9998;
+        position: relative;
+        top: 250px;
+        left: 20%;
+
+        .lets-hunt, .some, .wandering {
+          h1 {
+            font-family: 'Brandon-Grotesque', sans-serif;
+            display: inline-block;
+            font-size: 100px;
+            text-transform: none;
+          }
+        }
+        .lets-hunt {
+          width: 210px;
+          display: inline-block;
+
+          h1 {
+            font-size: 133px;
+            margin-bottom: 50px;
+          }
+          img {
+            width: 200px;
+          }
+        }
+        .some {
+          width: 37%;
+          display: inline-block;
+
+          h1 {
+            margin-top: 20px;
+            position: relative;
+            top: 15px;
+          }
+        }
+        .wandering {
+          margin-bottom: 30px;
+        }
+        .arrow-small, .ideer {
+          display: inline-block;
+          width: 45%;
+        }
+        .ideer {
+            margin-left: 30px;
+        }
+      }
+    }
+    .circle-container-small {
+      display: block;
+      width: 100px;
+      height: 100px;
+      position: relative;
+      overflow: hidden;
+      top: -670px;
+
+      // .pulse1 {
+      //     -webkit-animation: pulsejg1 2s linear infinite !important;
+      //     -moz-animation: pulsejg1 2s linear infinite !important;
+      //     animation: pulsejg1 2s linear infinite !important;
+      // }
+      // .pulse3 {
+      //     -webkit-animation: pulsejg3 2s linear infinite !important;
+      //     -moz-animation: pulsejg3 2s linear infinite !important;
+      //     animation: pulsejg3 2s linear infinite !important;
+      // }
+      // .pulse5 {
+      //     -webkit-animation: pulsejg5 2s linear infinite !important;
+      //     -moz-animation: pulsejg5 2s linear infinite !important;
+      //     animation: pulsejg5 2s linear infinite !important;
+      // }
+    }
+  } // Circle Section End
+
+
+
+  ////////////////////////////// STC Section ////////////////////////////////////////////////////////////
+  .stc-container {
+    .stc-content {
+      display: inline-block;
+      width: 46%;
+      margin: 0 2% 100px 0;
+      padding-right: 20px;
+
+      .title {
+        img {
+          width: 230px;
+        }
+        h1 {
+          margin-top: -115px;
+        }
+        h1.c {
+          margin-top: -51px;
+          color: $hunter-green;
+        }
+      }
+
+      .ul-container {
+        ul {
+          padding: 0;
+
+          li {
+            list-style-type: '-';
+            padding-left: 8px;
+            margin-left: 6px;
+          }
+        }
+      }
+    }
+
+    #technology {
+      position: relative;
+      top: 300px;
+      margin: 0 0% 100px 50px;
+    }
+  }
+
+
+
+  ///////////////////////// Case Study Grid Section ////////////////////////////////////////////////////////////
+  .case-study-container {
+    height: auto;
+
+    .main {
+      .view {
+        display: inline-block;
+        width: 48%;
+        height: auto;
+        margin: 5px;
+        float: none;
+        overflow: hidden;
+        position: relative;
+        text-align: center;
+        cursor: default;
+        background-color: $hunter-pink;
+
+        img {
+          display: block;
+          position: relative;
+          margin: auto;
+        }
+
+        h2 {
+          text-transform: none;
+          color: #fff;
+          text-align: left;
+          position: relative;
+          font-size: 36px;
+        }
+
+        p {
+          font-size: 15px;
+          position: relative;
+          color: #fff;
+          padding: 0px 40px 0px;
+          text-align: left;
+          margin: 0;
+          line-height: 22px;
+        }
+        p.description {
+          margin-top: 30px;
+        }
+
+        a.info {
+          display: inline-block;
+          text-decoration: none;
+          padding: 7px 14px;
+          background: #000;
+          color: #fff;
+          text-transform: uppercase;
+          position: absolute;
+          bottom: 30px;
+          right: 30px;
+          text-align: left;
+          background-color: transparent;
+
+          &:hover {
+
+          }
+
+          img.cta-arrow {
+            width: 100px;
+            opacity: 1;
+            -webkit-transform: scale(1);
+            -moz-transform: scale(1);
+            -o-transform: scale(1);
+            -ms-transform: scale(1);
+            transform: scale(1);
+          }
+        }
+      }
+      .view .mask,.view .content {
+        width: auto;
+        height: 100%;
+        position: absolute;
+        overflow: hidden;
+        top: 0;
+        left: 0;
+      }
+
+
+      // hover animation effect
+      .view-tenth {
+        &:hover {
+          img {
+            -webkit-transform: scale(10);
+            -moz-transform: scale(10);
+            -o-transform: scale(10);
+            -ms-transform: scale(10);
+            transform: scale(10);
+            -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+            filter: alpha(opacity=0);
+            opacity: 0;
+          }
+        }
+        img {
+           -webkit-transform: scaleY(1);
+           -moz-transform: scaleY(1);
+           -o-transform: scaleY(1);
+           -ms-transform: scaleY(1);
+           transform: scaleY(1);
+           -webkit-transition: all 0.7s ease-in-out;
+           -moz-transition: all 0.7s ease-in-out;
+           -o-transition: all 0.7s ease-in-out;
+           -ms-transition: all 0.7s ease-in-out;
+           transition: all 0.7s ease-in-out;
+        }
+        .mask {
+           -webkit-transition: all 0.5s linear;
+           -moz-transition: all 0.5s linear;
+           -o-transition: all 0.5s linear;
+           -ms-transition: all 0.5s linear;
+           transition: all 0.5s linear;
+           // -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+           // filter: alpha(opacity=0);
+           // opacity: 0;
+
+           h2 {
+              border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+              background: transparent;
+              margin: 20px 40px;
+              -webkit-transform: scale(0);
+              -moz-transform: scale(0);
+              -o-transform: scale(0);
+              -ms-transform: scale(0);
+              transform: scale(0);
+              -webkit-transition: all 0.5s linear;
+              -moz-transition: all 0.5s linear;
+              -o-transition: all 0.5s linear;
+              -ms-transition: all 0.5s linear;
+              transition: all 0.5s linear;
+              -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+              filter: alpha(opacity=0);
+              opacity: 0;
+           }
+
+           p {
+              -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+              filter: alpha(opacity=0);
+              opacity: 0;
+              -webkit-transform: scale(0);
+              -moz-transform: scale(0);
+              -o-transform: scale(0);
+              -ms-transform: scale(0);
+              transform: scale(0);
+              -webkit-transition: all 0.5s linear;
+              -moz-transition: all 0.5s linear;
+              -o-transition: all 0.5s linear;
+              -ms-transition: all 0.5s linear;
+              transition: all 0.5s linear;
+           }
+
+           a.info {
+              -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+              filter: alpha(opacity=0);
+              opacity: 0;
+              -webkit-transform: scale(0);
+              -moz-transform: scale(0);
+              -o-transform: scale(0);
+              -ms-transform: scale(0);
+              transform: scale(0);
+              -webkit-transition: all 0.5s linear;
+              -moz-transition: all 0.5s linear;
+              -o-transition: all 0.5s linear;
+              -ms-transition: all 0.5s linear;
+              transition: all 0.5s linear;
+           }
+        }
+      }
+
+      .view-tenth:hover h2,.view-tenth:hover p,.view-tenth:hover a.info {
+         -webkit-transform: scale(1);
+         -moz-transform: scale(1);
+         -o-transform: scale(1);
+         -ms-transform: scale(1);
+         transform: scale(1);
+         -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+         filter: alpha(opacity=100);
+         opacity: 1;
+      }
+    }
+
+    .cta-container {
+      margin: 80px auto;
+    }
+  }
+}
+
+
+
+////////////////////////// Work With Banner Section ////////////////////////////////////////////////////////////
+.work-with-banner {
+  text-align: center;
+  background-color: $hunter-pink;
+  padding: 15px 0 25px;
+  margin-bottom: 50px;
+
+  h3 {
+
+  }
+
+  .typewriter {
+    width: 400px;
+    margin: 0 auto;
+
+    h1 {
+      display: block;
+    }
+  }
+}
+
+
+
+
+.landing {
+  .clients-circle {
+    height: 600px;
+    display: block;
+
+    .circle-container {
+      height: 600px;
+      width: 600px;
+      position: relative;
+      margin: 100px auto;
     }
   }
 }

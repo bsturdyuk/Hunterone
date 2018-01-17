@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 420.3 416.6" style="enable-background:new 0 0 420.3 416.6;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{font-family:'BrandonGrotesque-Black';}
+	.st2{font-size:131.5775px;}
+	.st3{font-size:100px;}
+	.st4{font-size:42.9654px;}
+	.st5{fill:none;stroke:#FFFFFF;stroke-width:4;stroke-miterlimit:10;}
+</style>
+<text transform="matrix(1 0 0 1 6.103516e-05 111.8398)" class="st0 st1 st2">Let’s</text>
+<text transform="matrix(1 0 0 1 12.0007 288.613)" class="st0 st1 st3">wandering</text>
+<text transform="matrix(1 0 0 1 54.9379 179.1194)" class="st1 st4">HUNT</text>
+<g>
+	<line class="st5" x1="62.8" y1="365.9" x2="174.1" y2="365.9"/>
+	<polygon class="st0" points="166.6,353.6 199.8,365.9 166.6,378.1 174.1,365.9 	"/>
+	<g>
+		<g>
+			<polygon class="st0" points="44.6,372.9 51,365.3 44.6,358.8 62.2,358.8 68.6,365.9 62.2,372.9 			"/>
+			<polygon class="st0" points="23.4,372.9 29.7,365.3 23.4,358.8 41,358.8 47.3,365.9 41,372.9 			"/>
+		</g>
+	</g>
+</g>
+<g>
+	<polygon points="404.6,416.6 212.1,416.6 212.1,338.2 227.7,318.6 402.8,338.2 420.2,397 	"/>
+	<rect x="232.3" y="324.4" class="st0" width="183.3" height="66.9"/>
+	<path d="M420.2,318.6H227.7V397h192.5V318.6z M411,385.5H236.9v-55.3H411V385.5z"/>
+</g>
+</svg>

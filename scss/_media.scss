@@ -83,11 +83,107 @@
     /* Small Devices, Tablets */
     @media only screen and (max-width : 768px) {
     	#nav-icon span:nth-child(4) { background-color: green !important; }
+
+      .main-nav {
+        #parent {
+          font-size: 45px;
+          margin: 0 0 0 15%;
+
+          #wrapper  {
+            .nav-arrow { display: none;}
+            .nav-arrow-small {display: block; width: auto; height: 30px;}
+
+            &:hover {
+              #child { transform: translateX(278%); }
+            }
+          }
+        }
+      }
+
+      .landing {
+        .circle-section {
+          .circle-container {
+            right: inherit !important;
+
+            .text-container {
+              left: 0% !important;
+              width: 380px !important;
+
+              .lets-hunt {
+                width: 190px;
+
+                h1 {
+                  font-size: 115px !important;
+                  margin-bottom: 40px !important;
+                }
+                img {
+                  width: 180px !important;
+                }
+              }
+              .some {
+                h1 {
+                  font-size: 90px !important;
+                }
+              }
+              .wandering {
+                h1 {
+                  font-size: 90px;
+                }
+              }
+            }
+          }
+
+          .circle-container-small {
+            display: none;
+          }
+        }
+
+        .stc-container {
+          .stc-content {
+            width: 100%;
+            margin: 0 2% 50px 0;
+          }
+
+          #technology {
+            top: 0;
+            margin: 0 0% 50px 0px;
+            padding-left: 0px;
+          }
+        }
+
+
+        .case-study-container .main .view {
+          width: 80%;
+          margin: 0 10%;
+        }
+      }
     }
 
     /* Extra Small Devices, Phones */
     @media only screen and (max-width : 480px) {
     	#nav-icon span:nth-child(4) { background-color: yellow !important; }
+
+      .main-nav {
+        #parent {
+          font-size: 30px;
+          margin: 0 0 0 12%;
+          line-height: 40px;
+          height: 55px;
+
+          #wrapper {
+            .nav-arrow-small {
+              height: 20px;
+            }
+            #child {
+              top: 9px;
+            }
+            &:hover {
+              #child { transform: translateX(425%); }
+            }
+          }
+        }
+      }
+
     }
 
     /* Custom, iPhone Retina */

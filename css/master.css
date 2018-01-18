@@ -1055,6 +1055,9 @@ footer {
   height: auto;
   top: -8px; }
 
+.nav-arrow-small {
+  display: none; }
+
 /* CTA */
 #parent {
   position: relative;
@@ -1397,11 +1400,64 @@ footer {
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
   #nav-icon span:nth-child(4) {
-    background-color: green !important; } }
+    background-color: green !important; }
+
+  .main-nav #parent {
+    font-size: 45px;
+    margin: 0 0 0 15%; }
+    .main-nav #parent #wrapper .nav-arrow {
+      display: none; }
+    .main-nav #parent #wrapper .nav-arrow-small {
+      display: block;
+      width: auto;
+      height: 30px; }
+    .main-nav #parent #wrapper:hover #child {
+      transform: translateX(278%); }
+
+  .landing .circle-section .circle-container {
+    right: inherit !important; }
+    .landing .circle-section .circle-container .text-container {
+      left: 0% !important;
+      width: 380px !important; }
+      .landing .circle-section .circle-container .text-container .lets-hunt {
+        width: 190px; }
+        .landing .circle-section .circle-container .text-container .lets-hunt h1 {
+          font-size: 115px !important;
+          margin-bottom: 40px !important; }
+        .landing .circle-section .circle-container .text-container .lets-hunt img {
+          width: 180px !important; }
+      .landing .circle-section .circle-container .text-container .some h1 {
+        font-size: 90px !important; }
+      .landing .circle-section .circle-container .text-container .wandering h1 {
+        font-size: 90px; }
+  .landing .circle-section .circle-container-small {
+    display: none; }
+  .landing .stc-container .stc-content {
+    width: 100%;
+    margin: 0 2% 50px 0; }
+  .landing .stc-container #technology {
+    top: 0;
+    margin: 0 0% 50px 0px;
+    padding-left: 0px; }
+  .landing .case-study-container .main .view {
+    width: 80%;
+    margin: 0 10%; } }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
   #nav-icon span:nth-child(4) {
-    background-color: yellow !important; } }
+    background-color: yellow !important; }
+
+  .main-nav #parent {
+    font-size: 30px;
+    margin: 0 0 0 12%;
+    line-height: 40px;
+    height: 55px; }
+    .main-nav #parent #wrapper .nav-arrow-small {
+      height: 20px; }
+    .main-nav #parent #wrapper #child {
+      top: 9px; }
+    .main-nav #parent #wrapper:hover #child {
+      transform: translateX(425%); } }
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
   #nav-icon span:nth-child(4) {

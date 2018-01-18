@@ -668,56 +668,242 @@ inset 0 0 0 0px   rgba(255,255,155,.4);
 
 
 //////////////// Client Circle Animation //////////////////
-// // Demo SHITE
+// // // Demo SHITE
+// // // ====================================
+// // html,body {height: 100%;margin:0;}body{display: flex;flex-direction:column;align-items: center;justify-content:center;width:100%;background:#324D5B;}svg{max-width:100%;}
+//
+//
+// // Required SHITE
 // // ====================================
-// html,body {height: 100%;margin:0;}body{display: flex;flex-direction:column;align-items: center;justify-content:center;width:100%;background:#324D5B;}svg{max-width:100%;}
+//
+// $circle-count: 9;
+// $loader-proportion: 500px;
+// $animation_config: (
+//   name: spin,
+//   duration: 4s,
+//   timing: ease-in-out,
+//   iteration: 1,
+//   direction: reverse,
+//   fill-mode: both
+// );
+//
+// @function sh-setup($config) {
+//   @return zip(map-values($config)...);
+// }
+//
+// @keyframes spin {
+//   to {
+//     transform: rotate(360deg);
+//   }
+// }
+//
+// .loader {
+//   animation: sh-setup($animation_config);
+//   height: $loader-proportion;
+//   position: relative;
+//   width: $loader-proportion;
+//   margin: 150px auto;
+//
+//   svg:not(#circle-middle) {
+//     animation: sh-setup($animation_config);
+//     position: absolute;
+//     top: -50%;
+//     left: 0;
+//     transform-origin: bottom center;
+//   }
+// }
+//
+// @for $i from 1 through $circle-count {
+//   .loader svg:nth-of-type(#{$i}):not(#circle-middle) {
+//     transform: rotate(($i * (360/($circle-count - 1))) + deg);
+//   }
+// }
+/*===== STYLOWANIE SLIDER1-MARKUP =====*/
 
-
-// Required SHITE
-// ====================================
-
-$circle-count: 9;
-$loader-proportion: 500px;
-$animation_config: (
-  name: spin,
-  duration: 4s,
-  timing: ease-in-out,
-  iteration: 1,
-  direction: reverse,
-  fill-mode: both
-);
-
-@function sh-setup($config) {
-  @return zip(map-values($config)...);
-}
-
-@keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.loader {
-  animation: sh-setup($animation_config);
-  height: $loader-proportion;
+#slider-1 {
   position: relative;
-  width: $loader-proportion;
-  margin: 150px auto;
+  left: 50%;
+  margin: 250px 0 0px -200px;
+  width: 700px;
+  min-height: 700px;
 
-  svg:not(#circle-middle) {
-    animation: sh-setup($animation_config);
+  .icon-client {
     position: absolute;
-    top: -50%;
-    left: 0;
-    transform-origin: bottom center;
+    background-color: #ccc;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+
+    .circle-animation {
+      .pulse1 {
+          -webkit-animation: pulsejg6 3s linear infinite !important;
+          -moz-animation: pulsejg6 3s linear infinite !important;
+          animation: pulsejg6 3s linear infinite !important;
+      }
+      .pulse2 {
+          -webkit-animation: pulsejg7 3s linear infinite !important;
+          -moz-animation: pulsejg7 3s linear infinite !important;
+          animation: pulsejg7 3s linear infinite !important;
+      }
+      .pulse3 {
+          -webkit-animation: pulsejg8 3s linear infinite !important;
+          -moz-animation: pulsejg8 3s linear infinite !important;
+          animation: pulsejg8 3s linear infinite !important;
+      }
+      .pulse4 {
+          -webkit-animation: pulsejg9 3s linear infinite !important;
+          -moz-animation: pulsejg9 3s linear infinite !important;
+          animation: pulsejg9 3s linear infinite !important;
+      }
+      .pulse5 {
+          -webkit-animation: pulsejg10 3s linear infinite !important;
+          -moz-animation: pulsejg10 3s linear infinite !important;
+          animation: pulsejg10 3s linear infinite !important;
+      }
+
+      //pulsejg1
+      @-webkit-keyframes pulsejg6 {
+        0%   {transform: scale(0); opacity: .0;}
+        20%  {transform: scale(.2); opacity: .1;}
+        40%  {transform: scale(.4); opacity: .3;}
+        60%  {transform: scale(.6); opacity: .5;}
+        80%  {transform: scale(.8); opacity: .3;}
+        100% {transform: scale(1); opacity: 0;}
+      }
+      @-moz-keyframes pulsejg6 {
+        0%   {transform: scale(0); opacity: .0;}
+        20%  {transform: scale(.2); opacity: .1;}
+        40%  {transform: scale(.4); opacity: .3;}
+        60%  {transform: scale(.6); opacity: .5;}
+        80%  {transform: scale(.8); opacity: .3;}
+        100% {transform: scale(1); opacity: 0;}
+      }
+      @keyframes pulsejg6 {
+        0%   {transform: scale(0); opacity: .0;}
+        20%  {transform: scale(.2); opacity: .1;}
+        40%  {transform: scale(.4); opacity: .3;}
+        60%  {transform: scale(.6); opacity: .5;}
+        80%  {transform: scale(.8); opacity: .3;}
+        100% {transform: scale(1); opacity: 0;}
+      }
+
+      //pulsejg2
+      @-webkit-keyframes pulsejg7 {
+        0%   {transform: scale(0); opacity: .0;}
+        20%  {transform: scale(.2); opacity: .1;}
+        40%  {transform: scale(.4); opacity: .3;}
+        60%  {transform: scale(.6); opacity: .5;}
+        80%  {transform: scale(.8); opacity: .3;}
+        100% {transform: scale(1); opacity: 0;}
+      }
+      @-moz-keyframes pulsejg7 {
+        0%   {transform: scale(0); opacity: .0;}
+        20%  {transform: scale(.2); opacity: .1;}
+        40%  {transform: scale(.4); opacity: .3;}
+        60%  {transform: scale(.6); opacity: .5;}
+        80%  {transform: scale(.8); opacity: .3;}
+        100% {transform: scale(1); opacity: 0;}
+      }
+      @keyframes pulsejg7 {
+        0%   {transform: scale(0); opacity: .0;}
+        20%  {transform: scale(.2); opacity: .1;}
+        40%  {transform: scale(.4); opacity: .3;}
+        60%  {transform: scale(.6); opacity: .5;}
+        80%  {transform: scale(.8); opacity: .3;}
+        100% {transform: scale(1); opacity: 0;}
+      }
+
+      //pulsejg3
+      @-webkit-keyframes pulsejg8 {
+        0%   {transform: scale(0); opacity: .0;}
+        20%  {transform: scale(.2); opacity: .1;}
+        40%  {transform: scale(.4); opacity: .3;}
+        60%  {transform: scale(.6); opacity: .5;}
+        80%  {transform: scale(.8); opacity: .3;}
+        100% {transform: scale(1); opacity: 0;}
+      }
+      @-moz-keyframes pulsejg8 {
+        0%   {transform: scale(0); opacity: .0;}
+        20%  {transform: scale(.2); opacity: .1;}
+        40%  {transform: scale(.4); opacity: .3;}
+        60%  {transform: scale(.6); opacity: .5;}
+        80%  {transform: scale(.8); opacity: .3;}
+        100% {transform: scale(1); opacity: 0;}
+      }
+      @keyframes pulsejg8 {
+        0%   {transform: scale(0); opacity: .0;}
+        20%  {transform: scale(.2); opacity: .1;}
+        40%  {transform: scale(.4); opacity: .3;}
+        60%  {transform: scale(.6); opacity: .5;}
+        80%  {transform: scale(.8); opacity: .3;}
+        100% {transform: scale(1); opacity: 0;}
+      }
+
+      //pulsejg4
+      @-webkit-keyframes pulsejg9 {
+        0%   {transform: scale(0); opacity: .0;}
+        20%  {transform: scale(.2); opacity: .1;}
+        40%  {transform: scale(.4); opacity: .3;}
+        60%  {transform: scale(.6); opacity: .5;}
+        80%  {transform: scale(.8); opacity: .3;}
+        100% {transform: scale(1); opacity: 0;}
+      }
+      @-moz-keyframes pulsejg9 {
+        0%   {transform: scale(0); opacity: .0;}
+        20%  {transform: scale(.2); opacity: .1;}
+        40%  {transform: scale(.4); opacity: .3;}
+        60%  {transform: scale(.6); opacity: .5;}
+        80%  {transform: scale(.8); opacity: .3;}
+        100% {transform: scale(1); opacity: 0;}
+      }
+      @keyframes pulsejg9 {
+        0%   {transform: scale(0); opacity: .0;}
+        20%  {transform: scale(.2); opacity: .1;}
+        40%  {transform: scale(.4); opacity: .3;}
+        60%  {transform: scale(.6); opacity: .5;}
+        80%  {transform: scale(.8); opacity: .3;}
+        100% {transform: scale(1); opacity: 0;}
+      }
+
+      //pulsejg5
+      @-webkit-keyframes pulsejg10 {
+        0%   {transform: scale(0); opacity: .0;}
+        20%  {transform: scale(.2); opacity: .1;}
+        40%  {transform: scale(.4); opacity: .3;}
+        60%  {transform: scale(.6); opacity: .5;}
+        80%  {transform: scale(.8); opacity: .3;}
+        100% {transform: scale(1); opacity: 0;}
+      }
+      @-moz-keyframes pulsejg10 {
+        0%   {transform: scale(0); opacity: .0;}
+        20%  {transform: scale(.2); opacity: .1;}
+        40%  {transform: scale(.4); opacity: .3;}
+        60%  {transform: scale(.6); opacity: .5;}
+        80%  {transform: scale(.8); opacity: .3;}
+        100% {transform: scale(1); opacity: 0;}
+      }
+      @keyframes pulsejg10 {
+        0%   {transform: scale(0); opacity: .0;}
+        20%  {transform: scale(.2); opacity: .1;}
+        40%  {transform: scale(.4); opacity: .3;}
+        60%  {transform: scale(.6); opacity: .5;}
+        80%  {transform: scale(.8); opacity: .3;}
+        100% {transform: scale(1); opacity: 0;}
+      }
+    }
+  }
+  #icon-0 {
+    z-index: 2;
+    width: 400px;
+    height: 400px;
+    background-color: transparent
   }
 }
 
-@for $i from 1 through $circle-count {
-  .loader svg:nth-of-type(#{$i}):not(#circle-middle) {
-    transform: rotate(($i * (360/($circle-count - 1))) + deg);
-  }
-}
+
+
+
+
 
 
 // Typewriter effect
@@ -742,4 +928,43 @@ $animation_config: (
 @keyframes blink-caret {
   from, to { border-color: transparent }
   50% { border-color: white }
+}
+
+
+
+
+
+
+///////////////////////// Footer Section /////////////////////////////
+footer {
+  background: Linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('../img/group.jpg') no-repeat center;
+  background-size: cover;
+  height: 300px;
+  padding: 90px 10%;
+
+  .logo-container {
+    width: auto;
+    min-width: 200px;
+    float: left;
+  }
+
+  .contact-container {
+    width: 35%;
+    float: right;
+
+    h3 {
+      font-family: 'Open-Sans-Bold';
+      font-size: 36px;
+      margin: 0 0 20px 0;
+    }
+    p {
+      font-family: 'Open-Sans';
+      font-size: 15px;
+    }
+    h5 {
+      font-family: 'Open-Sans';
+      font-size: 15px;
+      color: $hunter-pink;
+    }
+  }
 }

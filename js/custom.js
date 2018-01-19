@@ -21,9 +21,9 @@ $(document).ready(function(){
   });
 
   // Client Icons animations
-  $(document).on('scroll', function() {
+  $(document).on('scroll', throttle(function() {
     if (ClientIcons.areInViewport() && !ClientIcons.animated()) {
       ClientIcons.animate();
     }
-  });
+  }, 200));
 });

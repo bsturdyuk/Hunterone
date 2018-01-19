@@ -240,22 +240,22 @@
       .view-tenth {
         &:hover {
           img {
-            -webkit-transform: scale(10);
-            -moz-transform: scale(10);
-            -o-transform: scale(10);
-            -ms-transform: scale(10);
-            transform: scale(10);
+            // -webkit-transform: scale(10);
+            // -moz-transform: scale(10);
+            // -o-transform: scale(10);
+            // -ms-transform: scale(10);
+            // transform: scale(10);
             -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
             filter: alpha(opacity=0);
             opacity: 0;
           }
         }
         img {
-           -webkit-transform: scaleY(1);
-           -moz-transform: scaleY(1);
-           -o-transform: scaleY(1);
-           -ms-transform: scaleY(1);
-           transform: scaleY(1);
+           // -webkit-transform: scaleY(1);
+           // -moz-transform: scaleY(1);
+           // -o-transform: scaleY(1);
+           // -ms-transform: scaleY(1);
+           // transform: scaleY(1);
            -webkit-transition: all 0.7s ease-in-out;
            -moz-transition: all 0.7s ease-in-out;
            -o-transition: all 0.7s ease-in-out;

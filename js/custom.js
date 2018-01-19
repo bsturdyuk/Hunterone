@@ -55,6 +55,14 @@ $(function() {
 
 
 
+new TypeIt('#clients', {
+     strings: ["Coca Cola", "HSBC", "Bia Saigon", "Unilever", "Suntory/","Pepsico", "Orion", "Uniben","Rebsico"],
+     speed: 200,
+     breakLines: false,
+     autoStart: false,
+     loop: true
+});
+
 
 /////////////////////// In View trigger /////////////////////
 // // get the element to animate

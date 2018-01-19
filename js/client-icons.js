@@ -6,11 +6,11 @@ var ClientIcons = (function(){
 
   return {
     
-    areAnimated: function() {
+    animated: function() {
       return animated;
     },
     
-    areInViewPort: function() {
+    areInViewport: function() {
       var elementTop = slider.offset().top;
       var elementBottom = elementTop + slider.outerHeight();
       var viewportTop = $(window).scrollTop();

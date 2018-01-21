@@ -30,7 +30,7 @@
       height: 1000px;
       position: relative;
       right: -30%;
-      top: -120px;
+      top: -300px;
       z-index: 100;
 
       .text-container {
@@ -112,6 +112,8 @@
 
   ////////////////////////////// STC Section ////////////////////////////////////////////////////////////
   .stc-container {
+    margin-top: -150px;
+    
     .stc-content {
       display: inline-block;
       width: 48%;
@@ -339,6 +341,11 @@
 
     .cta-container {
       margin: 80px auto;
+      text-align: center;
+
+      .btn-cta svg rect {
+        stroke: $hunter-green;
+      }
     }
   }
 }
@@ -391,16 +398,18 @@
       float: right;
       margin-top: 40px;
     }
-    .cta-container {
-      margin-top: 20px;
-      .btn-cta {
-        text-transform: none;
-        font-weight: bold;
-        margin-top: 100px;
+    .btn-cta {
+      margin: 100px auto 0;
+      display: block;
 
+      rect {
+        stroke: $hunter-pink;
+        stroke-width: 2;
+      }
+
+      &:hover {
         rect {
-          stroke: $hunter-pink;
-          stroke-width: 3;
+          stroke-width: 5;
         }
       }
     }

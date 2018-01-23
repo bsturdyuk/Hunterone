@@ -1094,7 +1094,8 @@ a.logo-home {
   position: fixed;
   right: 7%;
   top: 10px;
-  z-index: 9998; }
+  z-index: 9998;
+  transition: all .33s ease-in-out; }
 
 .landing .about-section {
   width: 30%;
@@ -1258,7 +1259,6 @@ a.logo-home {
     -ms-transition: all 0.5s linear;
     transition: all 0.5s linear; }
     .landing .case-study-container .main .view-tenth .mask h2 {
-      border-bottom: 1px solid rgba(0, 0, 0, 0.3);
       background: transparent;
       margin: 20px 40px;
       -webkit-transform: scale(0);
@@ -1328,7 +1328,22 @@ a.logo-home {
     .work-with-banner .typewriter h1 {
       display: block; }
 
-/*------ See Globals line 700 + ------*/
+/*------ See Globals line 700 + For animated circle feature ------*/
+.clients-mobile {
+  display: none; }
+
+@media only screen and (max-width: 768px) {
+  .client-circle-section {
+    display: none; }
+
+  .clients-mobile {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    justify-self: start;
+    align-self: center;
+    margin: 100px 0; } }
 .lets-hunt-section {
   background-color: #31BBAC;
   width: 100%;
@@ -1378,8 +1393,12 @@ a.logo-home {
     .landing .circle-section .circle-container .text-container {
       top: 150px;
       left: 5%; }
+  .landing .stc-container {
+    margin-top: 0; }
   .landing .case-study-container .main .view {
     width: 47%; }
+    .landing .case-study-container .main .view .mask a.info img.cta-arrow {
+      width: 80px !important; }
   .landing .case-study-container .main .view-tenth h2 {
     border-bottom: none !important;
     font-size: 40px;
@@ -1396,7 +1415,10 @@ a.logo-home {
     #slider-1 #icon-0 {
       width: 320px;
       height: 320px;
-      top: 30px; } }
+      top: 30px; }
+
+  footer .contact-container {
+    width: 55%; } }
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
   #nav-icon span:nth-child(4) {
@@ -1441,7 +1463,18 @@ a.logo-home {
     padding-left: 0px; }
   .landing .case-study-container .main .view {
     width: 80%;
-    margin: 0 10%; } }
+    margin: 0 10%; }
+
+  footer {
+    height: auto; }
+    footer .logo-container {
+      float: none; }
+      footer .logo-container img {
+        max-width: 300px; }
+    footer .contact-container {
+      float: none;
+      margin: 80px auto 0;
+      width: 90%; } }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
   #nav-icon span:nth-child(4) {
@@ -1457,7 +1490,31 @@ a.logo-home {
     .main-nav #parent #wrapper #child {
       top: 9px; }
     .main-nav #parent #wrapper:hover #child {
-      transform: translateX(425%); } }
+      transform: translateX(425%); }
+
+  .landing .circle-section .circle-container .text-container .lets-hunt h1 {
+    font-size: 85px !important;
+    margin-bottom: 10px !important; }
+  .landing .circle-section .circle-container .text-container .lets-hunt img {
+    width: 140px !important; }
+  .landing .circle-section .circle-container .text-container .some h1 {
+    font-size: 50px !important;
+    left: -40px; }
+  .landing .circle-section .circle-container .text-container .wandering {
+    margin-bottom: 10px; }
+    .landing .circle-section .circle-container .text-container .wandering h1 {
+      font-size: 62px;
+      margin-top: 5px; }
+  .landing .circle-section .circle-container .text-container .arrow-small, .landing .circle-section .circle-container .text-container .ideer {
+    width: 28%; }
+  .landing .case-study-container .main .view-tenth .mask h2 {
+    margin: 15px;
+    font-size: 30px; }
+  .landing .case-study-container .main .view-tenth .mask a.info {
+    bottom: 10px;
+    right: 10px; }
+    .landing .case-study-container .main .view-tenth .mask a.info img {
+      width: 60px !important; } }
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
   #nav-icon span:nth-child(4) {

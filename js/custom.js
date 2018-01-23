@@ -20,6 +20,20 @@ $(document).ready(function(){
     $(this).toggleClass('full-menu--open');
   });
 
+  // Logo Home Icon
+  $(window).scroll(function() {
+      if ($(this).scrollTop() > 200) { //use `this`, not `document`
+          $('.logo-home').css({
+              'display': 'none'
+          });
+      }
+      else {
+        $('.logo-home').css({
+            'display': 'block'
+        });
+      }
+  });
+
   // Client Icons animations
   $(document).on('scroll', throttle(function() {
     if (ClientIcons.areInViewport() && !ClientIcons.animated()) {

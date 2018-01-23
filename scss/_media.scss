@@ -42,10 +42,22 @@
           }
         }
 
+        .stc-container {
+          margin-top: 0;
+        }
+
         .case-study-container {
           .main {
             .view {
               width: 47%;
+
+              .mask {
+                a.info {
+                  img.cta-arrow {
+                    width: 80px !important;
+                  }
+                }
+              }
             }
 
             .view-tenth {
@@ -76,7 +88,9 @@
         }
       }
 
-
+      footer .contact-container {
+        width: 55%;
+      }
 
     }
 
@@ -157,6 +171,24 @@
           margin: 0 10%;
         }
       }
+
+      footer {
+        height: auto;
+
+        .logo-container {
+          float: none;
+
+          img {
+            max-width: 300px;
+          }
+        }
+
+        .contact-container {
+          float: none;
+          margin: 80px auto 0;
+          width: 90%;
+        }
+      }
     }
 
     /* Extra Small Devices, Phones */
@@ -179,6 +211,59 @@
             }
             &:hover {
               #child { transform: translateX(425%); }
+            }
+          }
+        }
+      }
+
+      .landing {
+        .circle-section .circle-container .text-container{
+          .lets-hunt {
+            h1 {
+              font-size: 85px !important;
+              margin-bottom: 10px !important;
+            }
+            img {
+              width: 140px !important;
+            }
+          }
+          .some {
+            h1 {
+              font-size: 50px !important;
+              left: -40px;
+            }
+          }
+          .wandering {
+            margin-bottom: 10px;
+
+            h1 {
+              font-size: 62px;
+              margin-top: 5px;
+            }
+          }
+          .arrow-small, .ideer {
+            width: 28%;
+          }
+        }
+
+
+        .case-study-container {
+          .main {
+            .view-tenth {
+              .mask {
+                h2 {
+                  margin: 15px;
+                  font-size: 30px;
+                }
+                a.info {
+                  bottom: 10px;
+                  right: 10px;
+
+                  img {
+                    width: 60px !important;
+                  }
+                }
+              }
             }
           }
         }

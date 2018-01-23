@@ -113,7 +113,7 @@
   ////////////////////////////// STC Section ////////////////////////////////////////////////////////////
   .stc-container {
     margin-top: -150px;
-    
+
     .stc-content {
       display: inline-block;
       width: 48%;
@@ -275,7 +275,6 @@
            // opacity: 0;
 
            h2 {
-              border-bottom: 1px solid rgba(0, 0, 0, 0.3);
               background: transparent;
               margin: 20px 40px;
               -webkit-transform: scale(0);
@@ -376,8 +375,25 @@
 
 
 ////////////////////////// Clients Loader Section ////////////////////////////////////////////////////////////
-/*------ See Globals line 700 + ------*/
+/*------ See Globals line 700 + For animated circle feature ------*/
+.clients-mobile {
+  display: none;
+}
 
+@media only screen and (max-width : 768px) {
+  .client-circle-section {
+    display: none;
+  }
+  .clients-mobile {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    justify-self: start;
+    align-self: center;
+    margin: 100px 0;
+  }
+}
 
 
 ////////////////////////// Lets Hunt Section Section ////////////////////////////////////////////////////////////

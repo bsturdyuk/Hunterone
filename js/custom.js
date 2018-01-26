@@ -11,6 +11,14 @@ $(document).ready(function(){
      loop: true
   });
 
+  new TypeIt('#hunters', {
+     strings: ["Passionate", "Wild", "Precise", "Imaginative", "Voracious", "Fierce"],
+     speed: 200,
+     breakLines: false,
+     autoStart: false,
+     loop: true
+  });
+
   // Nav Functionality
   $('.menu-toggle').on('click', function(){
     $('.full-menu').toggleClass('full-menu--open');

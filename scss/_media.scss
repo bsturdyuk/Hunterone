@@ -14,6 +14,17 @@
           display: none;
         }
       }
+
+
+
+      .work-hard-section {
+        .work-container {
+          right: 25%;
+        }
+        .play-container {
+          right: 16%;
+        }
+      }
     }
 
     /* Medium Devices, Desktops */
@@ -86,6 +97,21 @@
           height: 320px;
           top: 30px;
         }
+      }
+
+
+      //who-we-are
+      .work-hard-section {
+        .work-container {
+          right: 10%;
+        }
+        .play-container {
+          right: 0;
+        }
+      }
+
+      .leaders-section .leaders-container {
+          grid-template-columns: 1fr 1fr;
       }
 
       footer .contact-container {
@@ -171,6 +197,75 @@
           margin: 0 10%;
         }
       }
+
+
+      //who-we-are
+      .work-hard-section {
+        margin: 300px 0;
+
+        .circle-container {
+          right: 35%;
+        }
+
+        .work-container {
+          right: 8%;
+          top: 45%;
+
+          .w-lg {
+            font-size: 300px;
+          }
+          h1 {
+            top: 0px;
+            font-size: 32px;
+            left: 5px;
+          }
+          p {
+            top: -280px;
+            left: 280px;
+            width: 200px;
+          }
+        }
+        .play-container {
+          right: -40px;
+          top: 75%;
+
+          .p-lg {
+            font-size: 330px;
+            height: 395px;
+          }
+          h1 {
+            left: -90px;
+            font-size: 32px;
+          }
+          p {
+            width: 200px;
+            left: 31%;
+          }
+        }
+      }
+
+      .leaders-section .leaders-container {
+        grid-template-columns: 1fr;
+        grid-row-gap: 50px;
+      }
+
+      .hunters-section {
+        .cf {
+          padding: 0;
+          margin-left: 30%;
+
+          li {
+            figure {
+              div {
+                width: 145px !important;
+                height: 145px !important;
+              }
+            }
+          }
+        }
+      }
+
+
 
       footer {
         height: auto;
@@ -269,6 +364,82 @@
         }
       }
 
+
+      //who we are
+      .typewriter-banner {
+        h3 {
+          font-size: 26px;
+        }
+        .hunter-banner {
+          h1 {
+            font-size: 40px;
+          }
+        }
+      }
+
+      .work-hard-section {
+        .circle-container {
+          right: 40%;
+          top: 800px;
+        }
+        .work-container {
+          right: 8%;
+          top: 55%;
+
+          .w-lg {
+            font-size: 150px;
+          }
+          h1 {
+            top: 0px;
+            font-size: 32px;
+            left: 5px;
+          }
+          p {
+            top: -420px;
+            left: 145px;
+            width: 180px;
+          }
+        }
+        .play-container {
+          right: 40px;
+          top: 75%;
+
+          .p-lg {
+            font-size: 170px;
+            height: 195px;
+          }
+
+          h1 {
+            left: 0px;
+            font-size: 32px;
+          }
+          p {
+            width: 180px;
+            left: 40%;
+          }
+        }
+      }
+
+      .leaders-section {
+        h1 {
+          font-size: 40px;
+        }
+      }
+
+      .hunters-section {
+        .cf {
+          li {
+            figure {
+              margin: 0 !important;
+
+              div {
+                width: 115px !important;
+                height: 115px !important;
+              }
+            }
+          }
+        }
+      }
     }
 
     /* Custom, iPhone Retina */

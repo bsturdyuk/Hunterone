@@ -19,6 +19,14 @@ $(document).ready(function(){
      loop: true
   });
 
+  new TypeIt('#digital', {
+     strings: ["Memorable", "Test"],
+     speed: 200,
+     breakLines: false,
+     autoStart: false,
+     loop: true
+  });
+
   // Nav Functionality
   $('.menu-toggle').on('click', function(){
     $('.full-menu').toggleClass('full-menu--open');

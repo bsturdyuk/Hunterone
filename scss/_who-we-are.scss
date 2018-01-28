@@ -93,6 +93,7 @@
     margin: 100px 0;
 
     .leaders-item {
+      background-color: $hunter-blue;
       border-radius: 1000px;
       border: 2px solid $hunter-pink;
       width: 170px;
@@ -128,6 +129,7 @@
           -o-transform: translateX(90px) translateY(0);
           transform: translateX(90px) translateY(0);
           z-index: -10;
+          opacity: 1;
         }
       }
 
@@ -147,6 +149,7 @@
       	transition: 0.6s;
       	transform-style: preserve-3d;
       	position: relative;
+        z-index: 1000;
 
         .front {
           img {
@@ -190,10 +193,11 @@
       .name-container {
         -webkit-transition: all 200ms ease-in-out;
         transition: all 200ms ease-in-out;
-        -webkit-transform: translateX(-200px) translateY(0);
-        -moz-transform: translateX(-200px) translateY(0);
-        -o-transform: translateX(-200px) translateY(0);
-        transform: translateX(-200px) translateY(0);
+        -webkit-transform: translateX(-0px) translateY(0);
+        -moz-transform: translateX(-0px) translateY(0);
+        -o-transform: translateX(-0px) translateY(0);
+        transform: translateX(-0px) translateY(0);
+        opacity: 0;
 
         h1.letter-lg {
           font-family: 'Brandon-Grotesque', sans-serif;

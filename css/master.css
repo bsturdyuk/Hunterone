@@ -1433,11 +1433,7 @@ a.logo-home {
     overflow: hidden;
     margin: 0 auto;
     -webkit-transition: all 200ms ease-in-out;
-    transition: all 200ms ease-in-out;
-    -webkit-perspective: 1000;
-    -moz-perspective: 1000;
-    -o-perspective: 1000;
-    perspective: 1000; }
+    transition: all 200ms ease-in-out; }
     .leaders-section .leaders-container .leaders-item:hover {
       overflow: visible; }
       .leaders-section .leaders-container .leaders-item:hover .flip-wrapper {
@@ -1455,10 +1451,6 @@ a.logo-home {
         transform: translateX(90px) translateY(0);
         z-index: -10;
         opacity: 1; }
-    .leaders-section .leaders-container .leaders-item .flip-container, .leaders-section .leaders-container .leaders-item .front, .leaders-section .leaders-container .leaders-item .back {
-      width: 157px;
-      height: 157px;
-      margin: 5px; }
     .leaders-section .leaders-container .leaders-item .flip-wrapper {
       -webkit-transition: 0.6s;
       -webkit-transform-style: preserve-3d;
@@ -1471,7 +1463,7 @@ a.logo-home {
       position: relative;
       z-index: 1000; }
       .leaders-section .leaders-container .leaders-item .flip-wrapper .front img {
-        border-radius: 300px; }
+        border-radius: 1000px; }
       .leaders-section .leaders-container .leaders-item .flip-wrapper .back {
         -webkit-transform: rotateY(180deg);
         -moz-transform: rotateY(180deg);
@@ -1494,8 +1486,11 @@ a.logo-home {
       -o-backface-visibility: hidden;
       backface-visibility: hidden;
       position: absolute;
-      top: -1px;
-      left: -1px; }
+      border: 2px solid #151529;
+      top: 1px;
+      left: 1px;
+      width: 164px;
+      height: 164px; }
     .leaders-section .leaders-container .leaders-item .name-container {
       -webkit-transition: all 200ms ease-in-out;
       transition: all 200ms ease-in-out;
@@ -1666,6 +1661,9 @@ a.logo-home {
         -webkit-text-stroke-color: white;
         -moz-text-stroke-width: 2px;
         -webkit-text-stroke-width: 2px; } }
+
+.clients-banner {
+  background-color: #ED2F48; }
 
 /*==========  Non-Mobile First Method  ==========*/
 /* Large Devices, Wide Screens */

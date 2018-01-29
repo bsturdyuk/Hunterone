@@ -18,11 +18,8 @@
 
 
       .work-hard-section {
-        .work-container {
-          right: 25%;
-        }
-        .play-container {
-          right: 16%;
+        .whph-container {
+          padding-left: 13%;
         }
       }
     }
@@ -102,11 +99,8 @@
 
       //who-we-are
       .work-hard-section {
-        .work-container {
-          right: 10%;
-        }
-        .play-container {
-          right: 0;
+        .whph-container {
+          padding-left: 3%;
         }
       }
 
@@ -201,47 +195,60 @@
 
       //who-we-are
       .work-hard-section {
-        margin: 300px 0;
+        .whph-container {
+          padding: 0;
+          margin: 0 auto;
+          width: 500px;
 
-        .circle-container {
-          right: 35%;
+          .circle-container {
+            height: 400px;
+          width: 400px;
+          position: relative;
+          top: 250px;
+          left: -80px;
+          }
+
+          .work-container {
+            left: 1%;
+            top: -330px;
+
+            .w-lg {
+              font-size: 300px;
+            }
+            h1 {
+              top: -55px;
+              font-size: 32px;
+              left: 5px;
+            }
+            p {
+              top: -295px;
+              left: 280px;
+              width: 190px;
+            }
+          }
+          .play-container {
+            top: -560px;
+            left: 170px;
+
+            .p-lg {
+              font-size: 330px;
+              height: 395px;
+            }
+            h1 {
+              left: -83px;
+              font-size: 32px;
+            }
+            p {
+              width: 200px;
+              left: 118px;
+              top: -30px;
+            }
+          }
         }
+      }
 
-        .work-container {
-          right: 8%;
-          top: 45%;
-
-          .w-lg {
-            font-size: 300px;
-          }
-          h1 {
-            top: 0px;
-            font-size: 32px;
-            left: 5px;
-          }
-          p {
-            top: -280px;
-            left: 280px;
-            width: 200px;
-          }
-        }
-        .play-container {
-          right: -40px;
-          top: 75%;
-
-          .p-lg {
-            font-size: 330px;
-            height: 395px;
-          }
-          h1 {
-            left: -90px;
-            font-size: 32px;
-          }
-          p {
-            width: 200px;
-            left: 31%;
-          }
-        }
+      .typewriter-banner {
+        margin-bottom: 200px;
       }
 
       .leaders-section .leaders-container {
@@ -264,7 +271,6 @@
           }
         }
       }
-
 
 
       footer {
@@ -378,44 +384,49 @@
       }
 
       .work-hard-section {
-        .circle-container {
-          right: 40%;
-          top: 800px;
-        }
-        .work-container {
-          right: 8%;
-          top: 55%;
+        margin: 0px 0 100px 0;
 
-          .w-lg {
-            font-size: 150px;
-          }
-          h1 {
-            top: 0px;
-            font-size: 32px;
-            left: 5px;
-          }
-          p {
-            top: -420px;
-            left: 145px;
-            width: 180px;
-          }
-        }
-        .play-container {
-          right: 40px;
-          top: 75%;
+        .whph-container {
+          width: auto;
 
-          .p-lg {
-            font-size: 170px;
-            height: 195px;
+          .circle-container {
+            left: -150px;
           }
+          .work-container {
+            top: -170px;
 
-          h1 {
-            left: 0px;
-            font-size: 32px;
+            .w-lg {
+              font-size: 150px;
+            }
+            h1 {
+              top: 0px;
+              font-size: 32px;
+              left: 5px;
+            }
+            p {
+              top: -420px;
+              left: 145px;
+              width: 180px;
+            }
           }
-          p {
-            width: 180px;
-            left: 40%;
+          .play-container {
+            top: -450px;
+            left: 26%;
+
+            .p-lg {
+              font-size: 170px;
+              height: 195px;
+            }
+
+            h1 {
+              left: -45px;
+              font-size: 32px;
+            }
+            p {
+              width: 180px;
+              left: 60px;
+              top: 0px;
+            }
           }
         }
       }

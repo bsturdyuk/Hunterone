@@ -6,71 +6,78 @@
 }
 
 .work-hard-section {
-  height: 40vh;
-  margin: 300px 0 200px;
+  height: 100vh;
+  margin: 0px 0 200px 0;
 
-  .circle-container {
-    position: absolute;
-    height: 400px;
-    width: 400px;
-    right: 50%;
-  }
+  .whph-container {
+    margin: 0 auto;
+    width: auto;
+    height: auto;
+    padding-left: 20%;
 
-  .work-container {
-    position: absolute;
-    top: 35%;
-    right: 30%;
+    .circle-container {
+      height: 400px;
+      width: 400px;
+      position: absolute;
+      top: 250px;
+    }
 
-    .w-lg {
-      color: $hunter-pink;
-      display: inline-block;
-      font-family: 'Brandon-Grotesque', sans-serif;
-      font-size: 372px;
+    .work-container {
+      position: relative;
       height: 395px;
-      position: relative;
-      z-index: 8000;
+      left: 80px;
 
-    }
-    h1 {
-      display: inline-block;
-      color: $hunter-pink;
-      position: relative;
-      top: -90px;
-      font-size: 52px;
-    }
-    p {
-      width: 280px;
-      position: relative;
-      top: -250px;
-      left: 340px;
-    }
-  }
+      .w-lg {
+        color: $hunter-pink;
+        display: inline-block;
+        font-family: 'Brandon-Grotesque', sans-serif;
+        font-size: 372px;
+        height: 395px;
+        position: relative;
+        z-index: 8000;
 
-  .play-container {
-    display: inline-block;
-    position: absolute;
-    top: 60%;
-    right: 24%;
-    z-index: 9000;
+      }
+      h1 {
+        display: inline-block;
+        color: $hunter-pink;
+        position: relative;
+        top: -90px;
+        font-size: 52px;
+      }
+      p {
+        width: 280px;
+        position: relative;
+        top: -250px;
+        left: 340px;
+      }
+    }
 
-    .p-lg {
-      font-family: 'Brandon-Grotesque', sans-serif;
-      font-size: 372px;
-      color: $hunter-green;
-      display: inline-block;
-      height: 395px;
-    }
-    h1 {
-      display: inline-block;
-      color: $hunter-green;
+    .play-container {
+      z-index: 9000;
+      margin: 0 auto;
       position: relative;
-      left: -90px;
-    }
-    p {
-      display: block;
-      width: 270px;
-      position: relative;
-      left: 28%;
+      top: -200px;
+      left: 285px;
+
+      .p-lg {
+        font-family: 'Brandon-Grotesque', sans-serif;
+        font-size: 372px;
+        color: $hunter-green;
+        display: inline-block;
+        height: 395px;
+      }
+      h1 {
+        display: inline-block;
+        color: $hunter-green;
+        position: relative;
+        left: -90px;
+      }
+      p {
+        display: block;
+        width: 270px;
+        position: relative;
+        left: 138px;
+      }
     }
   }
 }

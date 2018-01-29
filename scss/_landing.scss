@@ -356,9 +356,14 @@
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 30px;
     grid-row-gap: 30px;
-    justify-self: start;
+    justify-self: center;
     align-self: center;
     margin: 100px 0;
+
+    .icon-client-mob {
+      max-width: 160px;
+      margin: 0 auto;
+    }
   }
 }
 

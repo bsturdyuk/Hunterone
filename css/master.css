@@ -1317,9 +1317,12 @@ a.logo-home {
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 30px;
     grid-row-gap: 30px;
-    justify-self: start;
+    justify-self: center;
     align-self: center;
-    margin: 100px 0; } }
+    margin: 100px 0; }
+    .clients-mobile .icon-client-mob {
+      max-width: 160px;
+      margin: 0 auto; } }
 .lets-hunt-section {
   background-color: #31BBAC;
   width: 100%;
@@ -1348,58 +1351,63 @@ a.logo-home {
   background-color: #31BBAC; }
 
 .work-hard-section {
-  height: 40vh;
-  margin: 300px 0 200px; }
-  .work-hard-section .circle-container {
-    position: absolute;
-    height: 400px;
-    width: 400px;
-    right: 50%; }
-  .work-hard-section .work-container {
-    position: absolute;
-    top: 35%;
-    right: 30%; }
-    .work-hard-section .work-container .w-lg {
-      color: #ED2F48;
-      display: inline-block;
-      font-family: 'Brandon-Grotesque', sans-serif;
-      font-size: 372px;
+  height: 100vh;
+  margin: 0px 0 200px 0; }
+  .work-hard-section .whph-container {
+    margin: 0 auto;
+    width: auto;
+    height: auto;
+    padding-left: 20%; }
+    .work-hard-section .whph-container .circle-container {
+      height: 400px;
+      width: 400px;
+      position: absolute;
+      top: 250px; }
+    .work-hard-section .whph-container .work-container {
+      position: relative;
       height: 395px;
+      left: 80px; }
+      .work-hard-section .whph-container .work-container .w-lg {
+        color: #ED2F48;
+        display: inline-block;
+        font-family: 'Brandon-Grotesque', sans-serif;
+        font-size: 372px;
+        height: 395px;
+        position: relative;
+        z-index: 8000; }
+      .work-hard-section .whph-container .work-container h1 {
+        display: inline-block;
+        color: #ED2F48;
+        position: relative;
+        top: -90px;
+        font-size: 52px; }
+      .work-hard-section .whph-container .work-container p {
+        width: 280px;
+        position: relative;
+        top: -250px;
+        left: 340px; }
+    .work-hard-section .whph-container .play-container {
+      z-index: 9000;
+      margin: 0 auto;
       position: relative;
-      z-index: 8000; }
-    .work-hard-section .work-container h1 {
-      display: inline-block;
-      color: #ED2F48;
-      position: relative;
-      top: -90px;
-      font-size: 52px; }
-    .work-hard-section .work-container p {
-      width: 280px;
-      position: relative;
-      top: -250px;
-      left: 340px; }
-  .work-hard-section .play-container {
-    display: inline-block;
-    position: absolute;
-    top: 60%;
-    right: 24%;
-    z-index: 9000; }
-    .work-hard-section .play-container .p-lg {
-      font-family: 'Brandon-Grotesque', sans-serif;
-      font-size: 372px;
-      color: #31BBAC;
-      display: inline-block;
-      height: 395px; }
-    .work-hard-section .play-container h1 {
-      display: inline-block;
-      color: #31BBAC;
-      position: relative;
-      left: -90px; }
-    .work-hard-section .play-container p {
-      display: block;
-      width: 270px;
-      position: relative;
-      left: 28%; }
+      top: -200px;
+      left: 285px; }
+      .work-hard-section .whph-container .play-container .p-lg {
+        font-family: 'Brandon-Grotesque', sans-serif;
+        font-size: 372px;
+        color: #31BBAC;
+        display: inline-block;
+        height: 395px; }
+      .work-hard-section .whph-container .play-container h1 {
+        display: inline-block;
+        color: #31BBAC;
+        position: relative;
+        left: -90px; }
+      .work-hard-section .whph-container .play-container p {
+        display: block;
+        width: 270px;
+        position: relative;
+        left: 138px; }
 
 .leaders-section h1 {
   font-size: 43px;
@@ -1670,10 +1678,8 @@ a.logo-home {
   .landing .case-study-container .main .view p {
     display: none; }
 
-  .work-hard-section .work-container {
-    right: 25%; }
-  .work-hard-section .play-container {
-    right: 16%; } }
+  .work-hard-section .whph-container {
+    padding-left: 13%; } }
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
   #nav-icon span:nth-child(4) {
@@ -1714,10 +1720,8 @@ a.logo-home {
       height: 320px;
       top: 30px; }
 
-  .work-hard-section .work-container {
-    right: 10%; }
-  .work-hard-section .play-container {
-    right: 0; }
+  .work-hard-section .whph-container {
+    padding-left: 3%; }
 
   .leaders-section .leaders-container {
     grid-template-columns: 1fr 1fr; }
@@ -1770,35 +1774,45 @@ a.logo-home {
     width: 80%;
     margin: 0 10%; }
 
-  .work-hard-section {
-    margin: 300px 0; }
-    .work-hard-section .circle-container {
-      right: 35%; }
-    .work-hard-section .work-container {
-      right: 8%;
-      top: 45%; }
-      .work-hard-section .work-container .w-lg {
+  .work-hard-section .whph-container {
+    padding: 0;
+    margin: 0 auto;
+    width: 500px; }
+    .work-hard-section .whph-container .circle-container {
+      height: 400px;
+      width: 400px;
+      position: relative;
+      top: 250px;
+      left: -80px; }
+    .work-hard-section .whph-container .work-container {
+      left: 1%;
+      top: -330px; }
+      .work-hard-section .whph-container .work-container .w-lg {
         font-size: 300px; }
-      .work-hard-section .work-container h1 {
-        top: 0px;
+      .work-hard-section .whph-container .work-container h1 {
+        top: -55px;
         font-size: 32px;
         left: 5px; }
-      .work-hard-section .work-container p {
-        top: -280px;
+      .work-hard-section .whph-container .work-container p {
+        top: -295px;
         left: 280px;
-        width: 200px; }
-    .work-hard-section .play-container {
-      right: -40px;
-      top: 75%; }
-      .work-hard-section .play-container .p-lg {
+        width: 190px; }
+    .work-hard-section .whph-container .play-container {
+      top: -560px;
+      left: 170px; }
+      .work-hard-section .whph-container .play-container .p-lg {
         font-size: 330px;
         height: 395px; }
-      .work-hard-section .play-container h1 {
-        left: -90px;
+      .work-hard-section .whph-container .play-container h1 {
+        left: -83px;
         font-size: 32px; }
-      .work-hard-section .play-container p {
+      .work-hard-section .whph-container .play-container p {
         width: 200px;
-        left: 31%; }
+        left: 118px;
+        top: -30px; }
+
+  .typewriter-banner {
+    margin-bottom: 200px; }
 
   .leaders-section .leaders-container {
     grid-template-columns: 1fr;
@@ -1867,34 +1881,37 @@ a.logo-home {
   .typewriter-banner .hunter-banner h1 {
     font-size: 40px; }
 
-  .work-hard-section .circle-container {
-    right: 40%;
-    top: 800px; }
-  .work-hard-section .work-container {
-    right: 8%;
-    top: 55%; }
-    .work-hard-section .work-container .w-lg {
-      font-size: 150px; }
-    .work-hard-section .work-container h1 {
-      top: 0px;
-      font-size: 32px;
-      left: 5px; }
-    .work-hard-section .work-container p {
-      top: -420px;
-      left: 145px;
-      width: 180px; }
-  .work-hard-section .play-container {
-    right: 40px;
-    top: 75%; }
-    .work-hard-section .play-container .p-lg {
-      font-size: 170px;
-      height: 195px; }
-    .work-hard-section .play-container h1 {
-      left: 0px;
-      font-size: 32px; }
-    .work-hard-section .play-container p {
-      width: 180px;
-      left: 40%; }
+  .work-hard-section {
+    margin: 0px 0 100px 0; }
+    .work-hard-section .whph-container {
+      width: auto; }
+      .work-hard-section .whph-container .circle-container {
+        left: -150px; }
+      .work-hard-section .whph-container .work-container {
+        top: -170px; }
+        .work-hard-section .whph-container .work-container .w-lg {
+          font-size: 150px; }
+        .work-hard-section .whph-container .work-container h1 {
+          top: 0px;
+          font-size: 32px;
+          left: 5px; }
+        .work-hard-section .whph-container .work-container p {
+          top: -420px;
+          left: 145px;
+          width: 180px; }
+      .work-hard-section .whph-container .play-container {
+        top: -450px;
+        left: 26%; }
+        .work-hard-section .whph-container .play-container .p-lg {
+          font-size: 170px;
+          height: 195px; }
+        .work-hard-section .whph-container .play-container h1 {
+          left: -45px;
+          font-size: 32px; }
+        .work-hard-section .whph-container .play-container p {
+          width: 180px;
+          left: 60px;
+          top: 0px; }
 
   .leaders-section h1 {
     font-size: 40px; }

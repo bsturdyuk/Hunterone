@@ -1,1 +1,92 @@
 // _what-we-do.scss
+.typewriter-banner {
+  margin-bottom: 200px;
+}
+
+.what-we-do-section {
+  height: auto;
+
+  .circle-container {
+    height: 450px;
+    width: 450px;
+    margin: 0 auto;
+    position: relative;
+
+    .arrow-container {
+      .arrow-left {
+        position: absolute;
+        top: 21%;
+        width: 300px;
+        transform: rotate(50deg);
+        left: -4.4%;
+        z-index: 10;
+      }
+      .arrow-right {
+        position: absolute;
+        top: 95px;
+        width: 300px;
+        transform: rotate(130deg);
+        right: -5.2%;
+        z-index: 10;
+      }
+      .arrow-bottom {
+        position: absolute;
+        top: 80%;
+        width: 300px;
+        transform: rotate(-90deg);
+        left: 17%;
+        z-index: 10;
+      }
+    }
+  }
+  .pulse1, .pulse2, .pulse3, .pulse4, .pulse5 {
+    -webkit-animation: pulsejg1 4s linear;
+    -moz-animation: pulsejg1 4s linear;
+    animation: pulsejg1 4s linear;
+  }
+
+  .social-container {
+    width: 22%;
+    position: absolute;
+    top: 55%;
+    left: 10%;
+
+    h1 {
+      color: $hunter-pink;
+    }
+  }
+  .technology-container {
+    width: 24%;
+    position: absolute;
+    top: 45%;
+    right: 8%;
+
+    h1 {
+      color: $hunter-green;
+    }
+  }
+  .creative-container {
+    width: 290px;
+    margin: 100px auto 0;
+
+    h1 {
+      @supports
+        ((-webkit-text-stroke-color: white)
+        and
+        (-webkit-text-fill-color: transparent))
+        or
+        ((-moz-text-stroke-color: white)
+        and
+        (-moz-text-fill-color: transparent)) {
+        span {
+             -moz-text-fill-color: transparent;
+          -webkit-text-fill-color: transparent;
+             -moz-text-stroke-color: white;
+          -webkit-text-stroke-color: white;
+             -moz-text-stroke-width: 2px;
+          -webkit-text-stroke-width: 2px;
+        }
+      }
+    }
+  }
+}

@@ -1598,6 +1598,67 @@ a.logo-home {
   .hunters-section .cf {
     *zoom: 1; }
 
+.typewriter-banner {
+  margin-bottom: 200px; }
+
+.what-we-do-section {
+  height: auto; }
+  .what-we-do-section .circle-container {
+    height: 450px;
+    width: 450px;
+    margin: 0 auto;
+    position: relative; }
+    .what-we-do-section .circle-container .arrow-container .arrow-left {
+      position: absolute;
+      top: 21%;
+      width: 300px;
+      transform: rotate(50deg);
+      left: -4.4%;
+      z-index: 10; }
+    .what-we-do-section .circle-container .arrow-container .arrow-right {
+      position: absolute;
+      top: 95px;
+      width: 300px;
+      transform: rotate(130deg);
+      right: -5.2%;
+      z-index: 10; }
+    .what-we-do-section .circle-container .arrow-container .arrow-bottom {
+      position: absolute;
+      top: 80%;
+      width: 300px;
+      transform: rotate(-90deg);
+      left: 17%;
+      z-index: 10; }
+  .what-we-do-section .pulse1, .what-we-do-section .pulse2, .what-we-do-section .pulse3, .what-we-do-section .pulse4, .what-we-do-section .pulse5 {
+    -webkit-animation: pulsejg1 4s linear;
+    -moz-animation: pulsejg1 4s linear;
+    animation: pulsejg1 4s linear; }
+  .what-we-do-section .social-container {
+    width: 22%;
+    position: absolute;
+    top: 55%;
+    left: 10%; }
+    .what-we-do-section .social-container h1 {
+      color: #ED2F48; }
+  .what-we-do-section .technology-container {
+    width: 24%;
+    position: absolute;
+    top: 45%;
+    right: 8%; }
+    .what-we-do-section .technology-container h1 {
+      color: #31BBAC; }
+  .what-we-do-section .creative-container {
+    width: 290px;
+    margin: 100px auto 0; }
+    @supports ((-webkit-text-stroke-color: white) and (-webkit-text-fill-color: transparent)) or ((-moz-text-stroke-color: white) and (-moz-text-fill-color: transparent)) {
+      .what-we-do-section .creative-container h1 span {
+        -moz-text-fill-color: transparent;
+        -webkit-text-fill-color: transparent;
+        -moz-text-stroke-color: white;
+        -webkit-text-stroke-color: white;
+        -moz-text-stroke-width: 2px;
+        -webkit-text-stroke-width: 2px; } }
+
 /*==========  Non-Mobile First Method  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {

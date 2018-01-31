@@ -5,7 +5,55 @@
 
 .what-we-do-section {
   height: auto;
+  margin-bottom: 400px;
 
+  .social-container {
+    width: 22%;
+    position: absolute;
+    top: 55%;
+    left: 10%;
+
+    h1 {
+      color: $hunter-pink;
+    }
+  }
+  .technology-container {
+    width: 24%;
+    position: absolute;
+    top: 45%;
+    right: 8%;
+
+    h1 {
+      color: $hunter-green;
+    }
+  }
+  .creative-container {
+    width: 290px;
+    margin: 100px auto 0;
+    position: absolute;
+    top: 950px;
+    left: 40%;
+
+    h1 {
+      @supports
+        ((-webkit-text-stroke-color: white)
+        and
+        (-webkit-text-fill-color: transparent))
+        or
+        ((-moz-text-stroke-color: white)
+        and
+        (-moz-text-fill-color: transparent)) {
+        span {
+             -moz-text-fill-color: transparent;
+          -webkit-text-fill-color: transparent;
+             -moz-text-stroke-color: white;
+          -webkit-text-stroke-color: white;
+             -moz-text-stroke-width: 2px;
+          -webkit-text-stroke-width: 2px;
+        }
+      }
+    }
+  }
   .circle-container {
     height: 450px;
     width: 450px;
@@ -44,53 +92,8 @@
     -moz-animation: pulsejg1 4s linear;
     animation: pulsejg1 4s linear;
   }
-
-  .social-container {
-    width: 22%;
-    position: absolute;
-    top: 55%;
-    left: 10%;
-
-    h1 {
-      color: $hunter-pink;
-    }
-  }
-  .technology-container {
-    width: 24%;
-    position: absolute;
-    top: 45%;
-    right: 8%;
-
-    h1 {
-      color: $hunter-green;
-    }
-  }
-  .creative-container {
-    width: 290px;
-    margin: 100px auto 0;
-
-    h1 {
-      @supports
-        ((-webkit-text-stroke-color: white)
-        and
-        (-webkit-text-fill-color: transparent))
-        or
-        ((-moz-text-stroke-color: white)
-        and
-        (-moz-text-fill-color: transparent)) {
-        span {
-             -moz-text-fill-color: transparent;
-          -webkit-text-fill-color: transparent;
-             -moz-text-stroke-color: white;
-          -webkit-text-stroke-color: white;
-             -moz-text-stroke-width: 2px;
-          -webkit-text-stroke-width: 2px;
-        }
-      }
-    }
-  }
 }
 
 .clients-banner {
-  background-color: $hunter-pink; 
+  background-color: $hunter-pink;
 }

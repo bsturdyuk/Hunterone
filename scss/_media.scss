@@ -15,6 +15,43 @@
         }
       }
 
+      // WHAT WE DO
+      .what-we-do-section {
+        .circle-container {
+          width: 350px;
+          height: 350px;
+
+          .arrow-container {
+            .arrow-left {
+              top: 21%;
+              width: 250px;
+              left: -8.4%;
+            }
+            .arrow-right {
+              top: 74px;
+              width: 250px;
+              right: -8.5%;
+            }
+            .arrow-bottom {
+              top: 83%;
+              width: 250px;
+              left: 14.3%;
+            }
+          }
+        }
+
+        .social-container h1, .technology-container h1, .creative-container h1 {
+          font-size: 45px;
+          line-height: 55px;
+        }
+        .technology-container {
+          width: 23%;
+        }
+        .creative-container {
+          top: 830px;
+        }
+      }
+
     }
 
     /* Medium Devices, Desktops */
@@ -100,12 +137,47 @@
       }
 
 
+
+      // What we do
+      .what-we-do-section {
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 50px;
+        grid-row-gap: 50px;
+        justify-self: start;
+        align-self: start;
+        margin: 0 5%;
+
+        .social-container, .technology-container, .creative-container {
+          position: static;
+          width: auto;
+        }
+
+        .creative-container {
+          margin: 0;
+        }
+        .circle-container {
+          width: 300px;
+          height: 300px;
+          margin: auto;
+
+          .arrow-container {
+            display: none;
+          }
+        }
+      }
+
+
       //our-projects
       .works-filter-container .main .view {
         h2 {
           line-height: 40px;
         }
       }
+
+
+
 
     }
 
@@ -264,6 +336,17 @@
               }
             }
           }
+        }
+      }
+
+
+
+      // What we do
+      .what-we-do-section {
+        grid-template-columns: 1fr;
+
+        .circle-container {
+          margin-top: 0px;
         }
       }
 

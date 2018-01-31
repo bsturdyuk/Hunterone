@@ -14,7 +14,7 @@
           display: none;
         }
       }
-      
+
     }
 
     /* Medium Devices, Desktops */
@@ -97,6 +97,14 @@
 
       footer .contact-container {
         width: 55%;
+      }
+
+
+      //our-projects
+      .works-filter-container .main .view {
+        h2 {
+          line-height: 40px;
+        }
       }
 
     }
@@ -259,6 +267,12 @@
         }
       }
 
+      // Our Projects
+      .works-filter-container .main .view {
+        p.description {
+          display: none;
+        }
+      }
 
       footer {
         height: auto;
@@ -436,6 +450,14 @@
               }
             }
           }
+        }
+      }
+
+
+      // Our Projects
+      .works-filter-container {
+        .main  {
+          grid-template-columns: 1fr !important;
         }
       }
     }

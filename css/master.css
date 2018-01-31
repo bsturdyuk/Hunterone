@@ -1351,7 +1351,7 @@ a.logo-home {
   background-color: #31BBAC; }
 
 .work-hard-section {
-  height: 100vh;
+  height: auto;
   margin: 0; }
   .work-hard-section .whph-container {
     margin: 0 auto;
@@ -1401,12 +1401,14 @@ a.logo-home {
         display: inline-block;
         color: #31BBAC;
         position: relative;
-        left: -90px; }
+        left: -90px;
+        top: -30px; }
       .work-hard-section .whph-container .play-container p {
         display: block;
         width: 270px;
         position: relative;
-        left: 138px; }
+        left: 138px;
+        top: -30px; }
 
 .leaders-section h1 {
   font-size: 43px;
@@ -1664,6 +1666,155 @@ a.logo-home {
 .clients-banner {
   background-color: #ED2F48; }
 
+.works-filter-section {
+  margin: 200px 0; }
+  .works-filter-section .filter-controls {
+    margin-left: 10%; }
+    .works-filter-section .filter-controls .filter-button {
+      border: none;
+      background: transparent;
+      color: white;
+      font-family: "Open-Sans", sans-serif;
+      border-radius: 0px;
+      border-bottom: 1px solid transparent;
+      transition: all .33s ease-in; }
+      .works-filter-section .filter-controls .filter-button:hover, .works-filter-section .filter-controls .filter-button:active, .works-filter-section .filter-controls .filter-button:focus {
+        color: #31BBAC;
+        border-bottom: 1px solid #31BBAC; }
+  .works-filter-section .works-filter-container {
+    margin-top: 100px; }
+    .works-filter-section .works-filter-container .main {
+      display: grid;
+      grid-template-rows: auto;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 0px;
+      grid-row-gap: 0px;
+      justify-items: start;
+      align-items: start; }
+      .works-filter-section .works-filter-container .main .view {
+        display: inline-block;
+        width: 100%;
+        max-height: 400px;
+        overflow: hidden;
+        cursor: default; }
+        .works-filter-section .works-filter-container .main .view .view-bg-img {
+          width: 100%;
+          height: 400px; }
+        .works-filter-section .works-filter-container .main .view .mask h2 {
+          text-transform: none;
+          color: #fff;
+          text-align: left;
+          position: relative;
+          font-size: 36px; }
+        .works-filter-section .works-filter-container .main .view .mask p {
+          font-size: 15px;
+          position: relative;
+          color: #fff;
+          padding: 0px 40px 0px;
+          text-align: left;
+          margin: 0;
+          line-height: 22px; }
+        .works-filter-section .works-filter-container .main .view .mask p.description {
+          margin-top: 30px; }
+        .works-filter-section .works-filter-container .main .view .mask a.info {
+          display: inline-block;
+          text-decoration: none;
+          padding: 7px 14px;
+          background: #000;
+          color: #fff;
+          text-transform: uppercase;
+          position: absolute;
+          bottom: 30px;
+          right: 30px;
+          text-align: left;
+          background-color: transparent; }
+          .works-filter-section .works-filter-container .main .view .mask a.info img.cta-arrow {
+            width: 100px;
+            opacity: 1;
+            -webkit-transform: scale(1);
+            -moz-transform: scale(1);
+            -o-transform: scale(1);
+            -ms-transform: scale(1);
+            transform: scale(1);
+            display: block; }
+      .works-filter-section .works-filter-container .main .view-tenth:hover img {
+        -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+        filter: alpha(opacity=0);
+        opacity: 0; }
+      .works-filter-section .works-filter-container .main .view-tenth:hover .mask {
+        background-color: #ED2F48;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        overflow: hidden;
+        top: 0;
+        left: 0; }
+      .works-filter-section .works-filter-container .main .view-tenth img {
+        -webkit-transition: all 0.7s ease-in-out;
+        -moz-transition: all 0.7s ease-in-out;
+        -o-transition: all 0.7s ease-in-out;
+        -ms-transition: all 0.7s ease-in-out;
+        transition: all 0.7s ease-in-out; }
+      .works-filter-section .works-filter-container .main .view-tenth .mask {
+        -webkit-transition: all 0.5s linear;
+        -moz-transition: all 0.5s linear;
+        -o-transition: all 0.5s linear;
+        -ms-transition: all 0.5s linear;
+        transition: all 0.5s linear; }
+        .works-filter-section .works-filter-container .main .view-tenth .mask h2 {
+          background: transparent;
+          margin: 20px 40px;
+          -webkit-transform: scale(0);
+          -moz-transform: scale(0);
+          -o-transform: scale(0);
+          -ms-transform: scale(0);
+          transform: scale(0);
+          -webkit-transition: all 0.5s linear;
+          -moz-transition: all 0.5s linear;
+          -o-transition: all 0.5s linear;
+          -ms-transition: all 0.5s linear;
+          transition: all 0.5s linear;
+          -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+          filter: alpha(opacity=0);
+          opacity: 0; }
+        .works-filter-section .works-filter-container .main .view-tenth .mask p {
+          -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+          filter: alpha(opacity=0);
+          opacity: 0;
+          -webkit-transform: scale(0);
+          -moz-transform: scale(0);
+          -o-transform: scale(0);
+          -ms-transform: scale(0);
+          transform: scale(0);
+          -webkit-transition: all 0.5s linear;
+          -moz-transition: all 0.5s linear;
+          -o-transition: all 0.5s linear;
+          -ms-transition: all 0.5s linear;
+          transition: all 0.5s linear; }
+        .works-filter-section .works-filter-container .main .view-tenth .mask a.info {
+          -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+          filter: alpha(opacity=0);
+          opacity: 0;
+          -webkit-transform: scale(0);
+          -moz-transform: scale(0);
+          -o-transform: scale(0);
+          -ms-transform: scale(0);
+          transform: scale(0);
+          -webkit-transition: all 0.5s linear;
+          -moz-transition: all 0.5s linear;
+          -o-transition: all 0.5s linear;
+          -ms-transition: all 0.5s linear;
+          transition: all 0.5s linear; }
+      .works-filter-section .works-filter-container .main .view-tenth:hover h2, .works-filter-section .works-filter-container .main .view-tenth:hover p, .works-filter-section .works-filter-container .main .view-tenth:hover a.info {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -o-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+        -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+        filter: alpha(opacity=100);
+        opacity: 1; }
+
 /*==========  Non-Mobile First Method  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
@@ -1718,7 +1869,10 @@ a.logo-home {
     grid-template-columns: 1fr 1fr; }
 
   footer .contact-container {
-    width: 55%; } }
+    width: 55%; }
+
+  .works-filter-container .main .view h2 {
+    line-height: 40px; } }
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
   #nav-icon span:nth-child(4) {
@@ -1816,6 +1970,9 @@ a.logo-home {
       width: 145px !important;
       height: 145px !important; }
 
+  .works-filter-container .main .view p.description {
+    display: none; }
+
   footer {
     height: auto; }
     footer .logo-container {
@@ -1911,7 +2068,10 @@ a.logo-home {
     margin: 0 !important; }
     .hunters-section .cf li figure div {
       width: 115px !important;
-      height: 115px !important; } }
+      height: 115px !important; }
+
+  .works-filter-container .main {
+    grid-template-columns: 1fr !important; } }
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
   #nav-icon span:nth-child(4) {

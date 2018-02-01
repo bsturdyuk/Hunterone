@@ -1700,7 +1700,8 @@ a.logo-home {
         width: 100%;
         max-height: 400px;
         overflow: hidden;
-        cursor: default; }
+        cursor: default;
+        position: relative; }
         .works-filter-section .works-filter-container .main .view .view-bg-img {
           width: 100%;
           height: 400px; }
@@ -1824,7 +1825,79 @@ a.logo-home {
   margin-top: 200px;
   padding: 50px 0; }
   .contact-form-container h1 {
+    text-transform: none;
+    margin-bottom: 50px; }
+  .contact-form-container .cf-field {
+    margin-bottom: 40px; }
+    .contact-form-container .cf-field .label {
+      display: block;
+      font-size: 15px;
+      font-weight: lighter;
+      line-height: 24px;
+      color: #fff;
+      text-align: left;
+      white-space: nowrap;
+      vertical-align: baseline;
+      border-radius: 0;
+      margin-bottom: 0;
+      padding: 0;
+      width: 80%; }
+    .contact-form-container .cf-field .text-input {
+      background-color: transparent;
+      border: 1px solid transparent;
+      border-bottom-width: 1px;
+      border-bottom-style: solid;
+      border-bottom-color: transparent;
+      box-shadow: 1px solid red;
+      border-bottom: 1px solid white;
+      width: 80%;
+      margin-top: 20px; }
+  .contact-form-container .cf-checkbox label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 40px;
+    font-weight: 200;
+    width: 24%;
+    font-family: "Open-Sans", sans-serif;
+    font-size: 15px; }
+    .contact-form-container .cf-checkbox label input {
+      margin: 20px 10px 0 0; }
+  .contact-form-container .cf-textarea {
+    width: 100%;
+    margin-bottom: 40px;
+    color: #31BBAC;
+    padding: 10px; }
+  .contact-form-container .cta-container {
+    text-align: center; }
+    .contact-form-container .cta-container .btn-cta rect {
+      stroke: #ED2F48;
+      stroke-width: 5; }
+    .contact-form-container .cta-container .btn-cta:hover rect {
+      stroke-width: 7; }
+
+.contact-lower {
+  margin: 100px 0; }
+  .contact-lower .reach-us h2 {
+    font-family: "Open-Sans", sans-serif;
+    font-size: 36px;
+    font-weight: bold;
     text-transform: none; }
+  .contact-lower .reach-us .social-media-container .social-icon {
+    width: 50px;
+    display: inline;
+    margin: 20px 10px 20px 0; }
+  .contact-lower .become-hunter {
+    width: auto;
+    float: right; }
+    .contact-lower .become-hunter h2 {
+      font-family: "Open-Sans", sans-serif;
+      font-size: 36px;
+      font-weight: bold;
+      text-transform: none;
+      text-align: right; }
+    .contact-lower .become-hunter p {
+      text-align: left;
+      display: block; }
 
 /*==========  Non-Mobile First Method  ==========*/
 /* Large Devices, Wide Screens */
@@ -1923,6 +1996,8 @@ a.logo-home {
       width: 300px;
       height: 300px;
       margin: auto; }
+      .what-we-do-section .circle-container .circle-animation {
+        top: -100px; }
       .what-we-do-section .circle-container .arrow-container {
         display: none; }
 
@@ -2042,7 +2117,14 @@ a.logo-home {
     footer .contact-container {
       float: none;
       margin: 80px auto 0;
-      width: 90%; } }
+      width: 90%; }
+
+  .contact-form-container .cf-field p {
+    float: none !important; }
+  .contact-form-container .cf-field .text-input {
+    float: none !important; }
+  .contact-form-container .cf-checkbox label {
+    width: 48%; } }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
   #nav-icon span:nth-child(4) {
@@ -2131,7 +2213,13 @@ a.logo-home {
       height: 115px !important; }
 
   .works-filter-container .main {
-    grid-template-columns: 1fr !important; } }
+    grid-template-columns: 1fr !important; }
+
+  .contact-form-container .cf-checkbox label {
+    width: 100%; }
+
+  .contact-lower .become-hunter h2 {
+    text-align: left; } }
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
   #nav-icon span:nth-child(4) {

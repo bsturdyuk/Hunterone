@@ -7,5 +7,111 @@
 
   h1 {
     text-transform: none;
+    margin-bottom: 50px;
+  }
+
+  .cf-field {
+    margin-bottom: 40px;
+
+    .label {
+      display: block;
+      font-size: 15px;
+      font-weight: lighter;
+      line-height: 24px;
+      color: #fff;
+      text-align: left;
+      white-space: nowrap;
+      vertical-align: baseline;
+      border-radius: 0;
+      margin-bottom: 0;
+      padding: 0;
+      width: 80%;
+    }
+    .text-input {
+      background-color: transparent;
+      border: 1px solid transparent;
+      border-bottom-width: 1px;
+      border-bottom-style: solid;
+      border-bottom-color: transparent;
+      box-shadow: 1px solid red;
+      border-bottom: 1px solid white;
+      width: 80%;
+      margin-top: 20px;
+    }
+  }
+  .cf-checkbox {
+    label {
+      display: inline-block;
+      max-width: 100%;
+      margin-bottom: 40px;
+      font-weight: 200;
+      width: 24%;
+      font-family: "Open-Sans", sans-serif;
+      font-size: 15px;
+
+      input {
+        margin: 20px 10px 0 0;
+      }
+    }
+  }
+
+  .cf-textarea {
+    width: 100%;
+    margin-bottom: 40px;
+    color: $hunter-green;
+    padding: 10px;
+  }
+
+  .cta-container {
+    text-align: center;
+
+    .btn-cta {
+      rect {
+        stroke: $hunter-pink;
+        stroke-width: 5;
+      }
+
+      &:hover {
+        rect {
+          stroke-width: 7;
+        }
+      }
+    }
+  }
+}
+
+.contact-lower {
+  margin: 100px 0;
+
+  .reach-us {
+    h2 {
+      font-family: "Open-Sans", sans-serif;
+      font-size: 36px;
+      font-weight: bold;
+      text-transform: none;
+    }
+    .social-media-container {
+      .social-icon {
+        width: 50px;
+        display: inline;
+        margin: 20px 10px 20px 0;
+      }
+    }
+  }
+  .become-hunter {
+    width: auto;
+    float: right;
+
+    h2 {
+      font-family: "Open-Sans", sans-serif;
+      font-size: 36px;
+      font-weight: bold;
+      text-transform: none;
+      text-align: right;
+    }
+    p {
+      text-align: left;
+      display: block;
+    }
   }
 }

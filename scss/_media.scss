@@ -162,6 +162,10 @@
           height: 300px;
           margin: auto;
 
+          .circle-animation {
+            top: -100px;
+          }
+
           .arrow-container {
             display: none;
           }
@@ -374,6 +378,21 @@
           width: 90%;
         }
       }
+
+
+      .contact-form-container {
+        .cf-field {
+          p {
+            float: none !important;
+          }
+          .text-input {
+            float: none !important;
+          }
+        }
+        .cf-checkbox label {
+          width: 48%;
+        }
+      }
     }
 
     /* Extra Small Devices, Phones */
@@ -542,6 +561,15 @@
         .main  {
           grid-template-columns: 1fr !important;
         }
+      }
+
+      .contact-form-container {
+        .cf-checkbox label {
+          width: 100%;
+        }
+      }
+      .contact-lower .become-hunter h2 {
+        text-align: left;
       }
     }
 

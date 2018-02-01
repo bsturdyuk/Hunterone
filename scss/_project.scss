@@ -1,0 +1,49 @@
+// _project.scss
+
+.project-jumbo {
+  background: url('../img/project.jpg') no-repeat center;
+  background-size: cover;
+  height: 90vh;
+  margin-top: 100px;
+
+  .project-title {
+    background-color: $hunter-pink;
+    width: 50%;
+    padding: 100px 20px 50px 15%;
+    position: relative;
+    top: 300px;
+  }
+}
+
+.project-content {
+  margin: 100px 0;
+
+  .issue {
+    height: 500px;
+    padding-right: 180px;
+
+    .social-media-container {
+      position: absolute;
+      bottom: 40px;
+      p {
+        display: inline;
+      }
+      .social-icon {
+        width: 30px;
+        display: inline;
+      }
+    }
+  }
+
+  .solutions {
+    padding-left: 100px;
+  }
+}
+
+.project-images {
+  margin-top: 100px;
+
+  .project-img {
+    margin-bottom: 100px;
+  }
+}

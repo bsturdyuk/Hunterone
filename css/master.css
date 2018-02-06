@@ -2260,7 +2260,7 @@ a.logo-home {
         .work-hard-section .whph-container .play-container p {
           width: 180px;
           left: 60px;
-          top: 0px; }
+          top: -10px; }
 
   .leaders-section h1 {
     font-size: 40px; }

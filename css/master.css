@@ -55,7 +55,7 @@ ul li {
 .btn-cta svg rect {
   fill: none;
   stroke: #fff;
-  stroke-width: 1;
+  stroke-width: 5;
   stroke-dasharray: 422, 0;
   -webkit-transition: all 1300ms cubic-bezier(0.19, 1, 0.22, 1);
   -moz-transition: all 1300ms cubic-bezier(0.19, 1, 0.22, 1);
@@ -1155,7 +1155,7 @@ a.logo-home {
       padding: 0; }
       .landing .stc-container .stc-content .ul-container ul li {
         list-style-type: '-';
-        padding-left: 8px;
+        padding-left: 4px;
         margin-left: 6px; }
   .landing .stc-container #technology {
     position: relative;
@@ -1347,7 +1347,7 @@ a.logo-home {
       display: block; }
       .lets-hunt-section .lets-hunt-container .btn-cta rect {
         stroke: #ED2F48;
-        stroke-width: 2; }
+        stroke-width: 5; }
       .lets-hunt-section .lets-hunt-container .btn-cta:hover rect {
         stroke-width: 5; }
 

@@ -14,6 +14,9 @@
           display: none;
         }
       }
+      .landing .circle-section .circle-container .text-container {
+          left: 20%;
+      }
 
       // WHAT WE DO
       .what-we-do-section {
@@ -49,6 +52,16 @@
         }
         .creative-container {
           top: 830px;
+        }
+      }
+
+
+      //Project
+      .project-jumbo {
+        .project-title {
+          h1 {
+            font-size: 45px;
+          }
         }
       }
 
@@ -177,6 +190,19 @@
       .works-filter-container .main .view {
         h2 {
           line-height: 40px;
+        }
+      }
+
+
+      //project (single)
+      .project-jumbo {
+        .project-title {
+          width: 60%;
+        }
+      }
+      .project-content {
+        .issue h2, .solutions h2 {
+          font-size: 40px;
         }
       }
 
@@ -361,6 +387,33 @@
         }
       }
 
+      //contact
+      .contact-form-container {
+        .cf-field {
+          p {
+            float: none !important;
+          }
+          .text-input {
+            float: none !important;
+          }
+        }
+        .cf-checkbox label {
+          width: 48%;
+        }
+      }
+
+      //Project
+      .project-jumbo {
+        .project-title {
+          width: 90%;
+        }
+      }
+      .project-content .solutions {
+        padding-left: 0;
+        margin-top: 50px;
+      }
+
+      // footer
       footer {
         height: auto;
 
@@ -376,21 +429,6 @@
           float: none;
           margin: 80px auto 0;
           width: 90%;
-        }
-      }
-
-
-      .contact-form-container {
-        .cf-field {
-          p {
-            float: none !important;
-          }
-          .text-input {
-            float: none !important;
-          }
-        }
-        .cf-checkbox label {
-          width: 48%;
         }
       }
     }
@@ -570,6 +608,16 @@
       }
       .contact-lower .become-hunter h2 {
         text-align: left;
+      }
+
+
+      // Project
+      .project-jumbo .project-title h1 {
+        font-size: 35px;
+        line-height: 45px;
+      }
+      .project-content .issue .social-media-container p {
+        display: block;
       }
     }
 

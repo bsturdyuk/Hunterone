@@ -1017,7 +1017,7 @@ footer {
 .menu-toggle {
   position: relative;
   left: 6%;
-  top: 20px; }
+  top: 30px; }
   .menu-toggle span {
     background-color: white; }
 
@@ -1068,8 +1068,8 @@ footer {
 a.logo-home {
   width: 100px;
   position: fixed;
-  right: 7%;
-  top: 10px;
+  right: 10%;
+  top: 30px;
   z-index: 9998;
   transition: all .33s ease-in-out; }
 
@@ -1090,15 +1090,15 @@ a.logo-home {
     width: 1000px;
     height: 1000px;
     position: relative;
-    right: -30%;
+    right: -40%;
     top: -300px;
     z-index: 100; }
     .landing .circle-section .circle-container .text-container {
       width: 420px;
       z-index: 9998;
       position: relative;
-      top: 250px;
-      left: 20%; }
+      top: 300px;
+      right: -260px; }
       .landing .circle-section .circle-container .text-container .lets-hunt h1, .landing .circle-section .circle-container .text-container .some h1, .landing .circle-section .circle-container .text-container .wandering h1 {
         font-family: 'Brandon-Grotesque', sans-serif;
         display: inline-block;
@@ -1108,8 +1108,10 @@ a.logo-home {
         width: 210px;
         display: inline-block; }
         .landing .circle-section .circle-container .text-container .lets-hunt h1 {
-          font-size: 133px;
-          margin-bottom: 50px; }
+          font-size: 140px;
+          margin-bottom: 30px;
+          position: relative;
+          left: -12px; }
         .landing .circle-section .circle-container .text-container .lets-hunt img {
           width: 200px; }
       .landing .circle-section .circle-container .text-container .some {
@@ -1121,6 +1123,8 @@ a.logo-home {
           top: 15px; }
       .landing .circle-section .circle-container .text-container .wandering {
         margin-bottom: 30px; }
+        .landing .circle-section .circle-container .text-container .wandering h1 {
+          margin-top: 0px; }
       .landing .circle-section .circle-container .text-container .arrow-small, .landing .circle-section .circle-container .text-container .ideer {
         display: inline-block;
         width: 45%; }
@@ -1157,7 +1161,8 @@ a.logo-home {
     position: relative;
     top: 300px;
     margin: 0 0% 100px 0px;
-    padding-left: 50px; }
+    padding-left: 50px;
+    left: 104px; }
 .landing .case-study-container {
   height: auto; }
   .landing .case-study-container .main .view {
@@ -1823,7 +1828,7 @@ a.logo-home {
 
 .contact-form-container {
   background-color: #31BBAC;
-  margin-top: 200px;
+  margin-top: 100px;
   padding: 50px 0; }
   .contact-form-container h1 {
     text-transform: none;
@@ -1916,7 +1921,7 @@ a.logo-home {
   margin: 100px 0; }
   .project-content .issue {
     height: 500px;
-    padding-right: 180px; }
+    padding-right: 10%; }
     .project-content .issue .social-media-container {
       position: absolute;
       bottom: 40px; }
@@ -1926,7 +1931,7 @@ a.logo-home {
         width: 30px;
         display: inline; }
   .project-content .solutions {
-    padding-left: 100px; }
+    padding-left: 10%; }
 
 .project-images {
   margin-top: 100px; }
@@ -1943,6 +1948,9 @@ a.logo-home {
     line-height: 44px; }
   .landing .case-study-container .main .view p {
     display: none; }
+
+  .landing .circle-section .circle-container .text-container {
+    left: 20%; }
 
   .what-we-do-section .circle-container {
     width: 350px;
@@ -1965,7 +1973,10 @@ a.logo-home {
   .what-we-do-section .technology-container {
     width: 23%; }
   .what-we-do-section .creative-container {
-    top: 830px; } }
+    top: 830px; }
+
+  .project-jumbo .project-title h1 {
+    font-size: 45px; } }
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
   #nav-icon span:nth-child(4) {
@@ -2036,7 +2047,13 @@ a.logo-home {
         display: none; }
 
   .works-filter-container .main .view h2 {
-    line-height: 40px; } }
+    line-height: 40px; }
+
+  .project-jumbo .project-title {
+    width: 60%; }
+
+  .project-content .issue h2, .project-content .solutions h2 {
+    font-size: 40px; } }
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
   #nav-icon span:nth-child(4) {
@@ -2142,6 +2159,20 @@ a.logo-home {
   .works-filter-container .main .view p.description {
     display: none; }
 
+  .contact-form-container .cf-field p {
+    float: none !important; }
+  .contact-form-container .cf-field .text-input {
+    float: none !important; }
+  .contact-form-container .cf-checkbox label {
+    width: 48%; }
+
+  .project-jumbo .project-title {
+    width: 90%; }
+
+  .project-content .solutions {
+    padding-left: 0;
+    margin-top: 50px; }
+
   footer {
     height: auto; }
     footer .logo-container {
@@ -2151,14 +2182,7 @@ a.logo-home {
     footer .contact-container {
       float: none;
       margin: 80px auto 0;
-      width: 90%; }
-
-  .contact-form-container .cf-field p {
-    float: none !important; }
-  .contact-form-container .cf-field .text-input {
-    float: none !important; }
-  .contact-form-container .cf-checkbox label {
-    width: 48%; } }
+      width: 90%; } }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
   #nav-icon span:nth-child(4) {
@@ -2253,7 +2277,14 @@ a.logo-home {
     width: 100%; }
 
   .contact-lower .become-hunter h2 {
-    text-align: left; } }
+    text-align: left; }
+
+  .project-jumbo .project-title h1 {
+    font-size: 35px;
+    line-height: 45px; }
+
+  .project-content .issue .social-media-container p {
+    display: block; } }
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
   #nav-icon span:nth-child(4) {

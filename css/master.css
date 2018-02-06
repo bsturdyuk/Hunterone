@@ -2135,7 +2135,7 @@ a.logo-home {
       .work-hard-section .whph-container .play-container p {
         width: 200px;
         left: 118px;
-        top: -30px; }
+        top: -60px; }
 
   .typewriter-banner {
     margin-bottom: 200px; }
@@ -2255,7 +2255,8 @@ a.logo-home {
           height: 195px; }
         .work-hard-section .whph-container .play-container h1 {
           left: -45px;
-          font-size: 32px; }
+          font-size: 32px;
+          top: 0; }
         .work-hard-section .whph-container .play-container p {
           width: 180px;
           left: 60px;

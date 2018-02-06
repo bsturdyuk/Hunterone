@@ -195,14 +195,14 @@
   }
   #child {
     position: absolute;
-    width: 550px;
+    width: 530px;
     background-color: transparent;
     transition: inherit;
     top: 17px;
     left: -1300px;
   }
   #wrapper:hover #child {
-      transform: translateX(220%);
+      transform: translateX(230%);
   }
 
   a.logo-home {

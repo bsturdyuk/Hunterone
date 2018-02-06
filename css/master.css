@@ -1056,14 +1056,14 @@ footer {
 
 #child {
   position: absolute;
-  width: 550px;
+  width: 530px;
   background-color: transparent;
   transition: inherit;
   top: 17px;
   left: -1300px; }
 
 #wrapper:hover #child {
-  transform: translateX(220%); }
+  transform: translateX(230%); }
 
 a.logo-home {
   width: 100px;
@@ -1828,7 +1828,7 @@ a.logo-home {
 
 .contact-form-container {
   background-color: #31BBAC;
-  margin-top: 100px;
+  margin-top: 150px;
   padding: 50px 0; }
   .contact-form-container h1 {
     text-transform: none;

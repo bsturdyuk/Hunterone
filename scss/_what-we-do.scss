@@ -1,14 +1,17 @@
 // _what-we-do.scss
+a.logo-home {
+  top: 20px !important;
+}
 .typewriter-banner {
   margin-bottom: 200px;
 }
 
 .what-we-do-section {
   height: auto;
-  margin-bottom: 400px;
+  margin-bottom: 200px;
 
   .social-container {
-    width: 22%;
+    width: 20%;
     position: absolute;
     top: 55%;
     left: 10%;
@@ -31,10 +34,12 @@
     width: 290px;
     margin: 100px auto 0;
     position: absolute;
-    top: 950px;
-    left: 40%;
+    top: 630px;
+    left: 68%;
 
     h1 {
+      margin-bottom: 20px;
+
       @supports
         ((-webkit-text-stroke-color: white)
         and
@@ -55,42 +60,42 @@
     }
   }
   .circle-container {
-    height: 450px;
-    width: 450px;
+    height: 400px;
+    width: 400px;
     margin: 0 auto;
     position: relative;
 
     .arrow-container {
       .arrow-left {
         position: absolute;
-        top: 21%;
-        width: 300px;
-        transform: rotate(50deg);
-        left: -4.4%;
+        top: 47%;
+        width: 250px;
+        transform: rotate(0deg);
+        left: -11.4%;
         z-index: 10;
       }
       .arrow-right {
         position: absolute;
-        top: 95px;
-        width: 300px;
-        transform: rotate(130deg);
-        right: -5.2%;
+        top: 111px;
+        width: 250px;
+        transform: rotate(140deg);
+        right: -4.2%;
         z-index: 10;
       }
       .arrow-bottom {
         position: absolute;
-        top: 80%;
-        width: 300px;
-        transform: rotate(-90deg);
-        left: 17%;
+        top: 66.3%;
+        width: 250px;
+        transform: rotate(-140deg);
+        left: 41.7%;
         z-index: 10;
       }
     }
   }
   .pulse1, .pulse2, .pulse3, .pulse4, .pulse5 {
-    -webkit-animation: pulsejg1 4s linear;
-    -moz-animation: pulsejg1 4s linear;
-    animation: pulsejg1 4s linear;
+    -webkit-animation: pulsejg1 4s linear infinite;
+    -moz-animation: pulsejg1 4s linear infinite;
+    animation: pulsejg1 4s linear infinite;
   }
 }
 

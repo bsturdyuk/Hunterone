@@ -1608,14 +1608,17 @@ a.logo-home {
   .hunters-section .cf {
     *zoom: 1; }
 
+a.logo-home {
+  top: 20px !important; }
+
 .typewriter-banner {
   margin-bottom: 200px; }
 
 .what-we-do-section {
   height: auto;
-  margin-bottom: 400px; }
+  margin-bottom: 200px; }
   .what-we-do-section .social-container {
-    width: 22%;
+    width: 20%;
     position: absolute;
     top: 55%;
     left: 10%; }
@@ -1632,46 +1635,48 @@ a.logo-home {
     width: 290px;
     margin: 100px auto 0;
     position: absolute;
-    top: 950px;
-    left: 40%; }
-    @supports ((-webkit-text-stroke-color: white) and (-webkit-text-fill-color: transparent)) or ((-moz-text-stroke-color: white) and (-moz-text-fill-color: transparent)) {
-      .what-we-do-section .creative-container h1 span {
-        -moz-text-fill-color: transparent;
-        -webkit-text-fill-color: transparent;
-        -moz-text-stroke-color: white;
-        -webkit-text-stroke-color: white;
-        -moz-text-stroke-width: 2px;
-        -webkit-text-stroke-width: 2px; } }
+    top: 630px;
+    left: 68%; }
+    .what-we-do-section .creative-container h1 {
+      margin-bottom: 20px; }
+      @supports ((-webkit-text-stroke-color: white) and (-webkit-text-fill-color: transparent)) or ((-moz-text-stroke-color: white) and (-moz-text-fill-color: transparent)) {
+        .what-we-do-section .creative-container h1 span {
+          -moz-text-fill-color: transparent;
+          -webkit-text-fill-color: transparent;
+          -moz-text-stroke-color: white;
+          -webkit-text-stroke-color: white;
+          -moz-text-stroke-width: 2px;
+          -webkit-text-stroke-width: 2px; } }
   .what-we-do-section .circle-container {
-    height: 450px;
-    width: 450px;
+    height: 400px;
+    width: 400px;
     margin: 0 auto;
     position: relative; }
     .what-we-do-section .circle-container .arrow-container .arrow-left {
       position: absolute;
-      top: 21%;
-      width: 300px;
-      transform: rotate(50deg);
-      left: -4.4%;
+      top: 47%;
+      width: 250px;
+      transform: rotate(0deg);
+      left: -11.4%;
       z-index: 10; }
     .what-we-do-section .circle-container .arrow-container .arrow-right {
       position: absolute;
-      top: 95px;
-      width: 300px;
-      transform: rotate(130deg);
-      right: -5.2%;
+      top: 111px;
+      width: 250px;
+      transform: rotate(140deg);
+      right: -4.2%;
       z-index: 10; }
     .what-we-do-section .circle-container .arrow-container .arrow-bottom {
       position: absolute;
-      top: 80%;
-      width: 300px;
-      transform: rotate(-90deg);
-      left: 17%;
+      top: 66.3%;
+      width: 250px;
+      transform: rotate(-140deg);
+      left: 41.7%;
       z-index: 10; }
   .what-we-do-section .pulse1, .what-we-do-section .pulse2, .what-we-do-section .pulse3, .what-we-do-section .pulse4, .what-we-do-section .pulse5 {
-    -webkit-animation: pulsejg1 4s linear;
-    -moz-animation: pulsejg1 4s linear;
-    animation: pulsejg1 4s linear; }
+    -webkit-animation: pulsejg1 4s linear infinite;
+    -moz-animation: pulsejg1 4s linear infinite;
+    animation: pulsejg1 4s linear infinite; }
 
 .clients-banner {
   background-color: #ED2F48; }
@@ -1909,7 +1914,7 @@ a.logo-home {
   background: url("../img/project.jpg") no-repeat center;
   background-size: cover;
   height: 90vh;
-  margin-top: 100px; }
+  margin-top: 150px; }
   .project-jumbo .project-title {
     background-color: #ED2F48;
     width: 50%;

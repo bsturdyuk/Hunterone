@@ -26,19 +26,19 @@
 
           .arrow-container {
             .arrow-left {
-              top: 21%;
+              top: 46%;
               width: 250px;
-              left: -8.4%;
+              left: -20%;
             }
             .arrow-right {
-              top: 74px;
+              top: 84px;
               width: 250px;
-              right: -8.5%;
+              right: -12.5%;
             }
             .arrow-bottom {
-              top: 83%;
+              top: 68.3%;
               width: 250px;
-              left: 14.3%;
+              left: 41%;
             }
           }
         }
@@ -47,11 +47,18 @@
           font-size: 45px;
           line-height: 55px;
         }
+        .social-container {
+          width: 21%;
+          position: absolute;
+          top: 52%;
+          left: 8%;
+        }
         .technology-container {
           width: 23%;
         }
         .creative-container {
-          top: 830px;
+          top: 700px;
+          margin-top: 0;
         }
       }
 
@@ -152,6 +159,9 @@
 
 
       // What we do
+      .typewriter-banner {
+        margin-bottom: 150px;
+      }
       .what-we-do-section {
         height: auto;
         display: grid;
@@ -372,11 +382,14 @@
 
 
       // What we do
+      .typewriter-banner {
+        margin-bottom: 100px;
+      }
       .what-we-do-section {
         grid-template-columns: 1fr;
 
         .circle-container {
-          margin-top: 0px;
+          display: none;
         }
       }
 

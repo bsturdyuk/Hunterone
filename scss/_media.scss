@@ -6,6 +6,9 @@
     	#nav-icon span:nth-child(4) { background-color: red !important; }
 
       .landing .case-study-container .main .view {
+        .cs-bg-img {
+          height: 45vh;
+        }
         h2 {
           line-height: 44px;
         }
@@ -108,6 +111,10 @@
           .main {
             .view {
               width: 47%;
+
+              .cs-bg-img {
+                height: 35vh;
+              }
 
               .mask {
                 a.info {
@@ -296,7 +303,26 @@
 
         .case-study-container .main .view {
           width: 80%;
-          margin: 0 10%;
+          margin: 0 10% 30px;
+
+          .mask {
+            position: static;
+
+            h2 {
+              -webkit-transform: scale(1);
+              -moz-transform: scale(1);
+              -o-transform: scale(1);
+              -ms-transform: scale(1);
+              transform: scale(1);
+              opacity: 1;
+            }
+          }
+
+          &:hover {
+            .cs-bg-img {
+              opacity: 1;
+            }
+          }
         }
       }
 
@@ -507,8 +533,8 @@
           .main {
             .view-tenth {
               width: 100%;
-              margin: 0;
-              
+              margin: 0 0 30px;
+
               .mask {
                 h2 {
                   margin: 15px;

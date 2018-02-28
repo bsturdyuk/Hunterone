@@ -164,10 +164,13 @@
         cursor: default;
         background-color: $hunter-pink;
 
-        img {
+        .cs-bg-img {
           display: block;
           position: relative;
           margin: auto;
+
+          height: 65vh;
+          width: 100%;
         }
 
         h2 {
@@ -229,13 +232,14 @@
       .view-tenth {
         &:hover {
           cursor: pointer;
-          img {
+
+          .cs-bg-img {
             -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
             filter: alpha(opacity=0);
             opacity: 0;
           }
         }
-        img {
+        .cs-bg-img {
            -webkit-transition: all 0.7s ease-in-out;
            -moz-transition: all 0.7s ease-in-out;
            -o-transition: all 0.7s ease-in-out;

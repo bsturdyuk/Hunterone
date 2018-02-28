@@ -1177,10 +1177,12 @@ a.logo-home {
     text-align: center;
     cursor: default;
     background-color: #ED2F48; }
-    .landing .case-study-container .main .view img {
+    .landing .case-study-container .main .view .cs-bg-img {
       display: block;
       position: relative;
-      margin: auto; }
+      margin: auto;
+      height: 65vh;
+      width: 100%; }
     .landing .case-study-container .main .view h2 {
       text-transform: none;
       color: #fff;
@@ -1226,11 +1228,11 @@ a.logo-home {
     left: 0; }
   .landing .case-study-container .main .view-tenth:hover {
     cursor: pointer; }
-    .landing .case-study-container .main .view-tenth:hover img {
+    .landing .case-study-container .main .view-tenth:hover .cs-bg-img {
       -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
       filter: alpha(opacity=0);
       opacity: 0; }
-  .landing .case-study-container .main .view-tenth img {
+  .landing .case-study-container .main .view-tenth .cs-bg-img {
     -webkit-transition: all 0.7s ease-in-out;
     -moz-transition: all 0.7s ease-in-out;
     -o-transition: all 0.7s ease-in-out;
@@ -1954,6 +1956,8 @@ a.logo-home {
   #nav-icon span:nth-child(4) {
     background-color: red !important; }
 
+  .landing .case-study-container .main .view .cs-bg-img {
+    height: 45vh; }
   .landing .case-study-container .main .view h2 {
     line-height: 44px; }
   .landing .case-study-container .main .view p {
@@ -2013,6 +2017,8 @@ a.logo-home {
     margin-top: 0; }
   .landing .case-study-container .main .view {
     width: 47%; }
+    .landing .case-study-container .main .view .cs-bg-img {
+      height: 35vh; }
     .landing .case-study-container .main .view .mask a.info img.cta-arrow {
       width: 80px !important; }
   .landing .case-study-container .main .view-tenth h2 {
@@ -2118,7 +2124,18 @@ a.logo-home {
     left: 0; }
   .landing .case-study-container .main .view {
     width: 80%;
-    margin: 0 10%; }
+    margin: 0 10% 30px; }
+    .landing .case-study-container .main .view .mask {
+      position: static; }
+      .landing .case-study-container .main .view .mask h2 {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -o-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+        opacity: 1; }
+    .landing .case-study-container .main .view:hover .cs-bg-img {
+      opacity: 1; }
 
   .work-hard-section .whph-container {
     padding: 0;
@@ -2240,7 +2257,7 @@ a.logo-home {
     width: 28%; }
   .landing .case-study-container .main .view-tenth {
     width: 100%;
-    margin: 0; }
+    margin: 0 0 30px; }
     .landing .case-study-container .main .view-tenth .mask h2 {
       margin: 15px;
       font-size: 30px; }

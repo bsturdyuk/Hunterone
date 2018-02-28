@@ -289,6 +289,7 @@
             top: 0;
             margin: 0 0% 50px 0px;
             padding-left: 0px;
+            left: 0;
           }
         }
 
@@ -399,7 +400,7 @@
           display: none;
         }
       }
- 
+
       //contact
       .contact-form-container {
         .cf-field {
@@ -505,6 +506,9 @@
         .case-study-container {
           .main {
             .view-tenth {
+              width: 100%;
+              margin: 0;
+              
               .mask {
                 h2 {
                   margin: 15px;

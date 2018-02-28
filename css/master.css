@@ -1196,7 +1196,7 @@ a.logo-home {
       line-height: 22px; }
     .landing .case-study-container .main .view p.description {
       margin-top: 30px; }
-    .landing .case-study-container .main .view a.info {
+    .landing .case-study-container .main .view .info {
       display: inline-block;
       text-decoration: none;
       padding: 7px 14px;
@@ -1208,7 +1208,7 @@ a.logo-home {
       right: 30px;
       text-align: left;
       background-color: transparent; }
-      .landing .case-study-container .main .view a.info img.cta-arrow {
+      .landing .case-study-container .main .view .info img.cta-arrow {
         width: 100px;
         opacity: 1;
         -webkit-transform: scale(1);
@@ -1223,10 +1223,12 @@ a.logo-home {
     overflow: hidden;
     top: 0;
     left: 0; }
-  .landing .case-study-container .main .view-tenth:hover img {
-    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
-    filter: alpha(opacity=0);
-    opacity: 0; }
+  .landing .case-study-container .main .view-tenth:hover {
+    cursor: pointer; }
+    .landing .case-study-container .main .view-tenth:hover img {
+      -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+      filter: alpha(opacity=0);
+      opacity: 0; }
   .landing .case-study-container .main .view-tenth img {
     -webkit-transition: all 0.7s ease-in-out;
     -moz-transition: all 0.7s ease-in-out;
@@ -1269,7 +1271,7 @@ a.logo-home {
       -o-transition: all 0.5s linear;
       -ms-transition: all 0.5s linear;
       transition: all 0.5s linear; }
-    .landing .case-study-container .main .view-tenth .mask a.info {
+    .landing .case-study-container .main .view-tenth .mask .info {
       -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
       filter: alpha(opacity=0);
       opacity: 0;
@@ -1283,7 +1285,7 @@ a.logo-home {
       -o-transition: all 0.5s linear;
       -ms-transition: all 0.5s linear;
       transition: all 0.5s linear; }
-  .landing .case-study-container .main .view-tenth:hover h2, .landing .case-study-container .main .view-tenth:hover p, .landing .case-study-container .main .view-tenth:hover a.info {
+  .landing .case-study-container .main .view-tenth:hover h2, .landing .case-study-container .main .view-tenth:hover p, .landing .case-study-container .main .view-tenth:hover .info {
     -webkit-transform: scale(1);
     -moz-transform: scale(1);
     -o-transform: scale(1);
@@ -1732,7 +1734,7 @@ a.logo-home {
           line-height: 22px; }
         .works-filter-section .works-filter-container .main .view .mask p.description {
           margin-top: 30px; }
-        .works-filter-section .works-filter-container .main .view .mask a.info {
+        .works-filter-section .works-filter-container .main .view .mask .info {
           display: inline-block;
           text-decoration: none;
           padding: 7px 14px;
@@ -1744,7 +1746,7 @@ a.logo-home {
           right: 30px;
           text-align: left;
           background-color: transparent; }
-          .works-filter-section .works-filter-container .main .view .mask a.info img.cta-arrow {
+          .works-filter-section .works-filter-container .main .view .mask .info img.cta-arrow {
             width: 100px;
             opacity: 1;
             -webkit-transform: scale(1);
@@ -1753,18 +1755,20 @@ a.logo-home {
             -ms-transform: scale(1);
             transform: scale(1);
             display: block; }
-      .works-filter-section .works-filter-container .main .view-tenth:hover img {
-        -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
-        filter: alpha(opacity=0);
-        opacity: 0; }
-      .works-filter-section .works-filter-container .main .view-tenth:hover .mask {
-        background-color: #ED2F48;
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        overflow: hidden;
-        top: 0;
-        left: 0; }
+      .works-filter-section .works-filter-container .main .view-tenth:hover {
+        cursor: pointer; }
+        .works-filter-section .works-filter-container .main .view-tenth:hover img {
+          -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+          filter: alpha(opacity=0);
+          opacity: 0; }
+        .works-filter-section .works-filter-container .main .view-tenth:hover .mask {
+          background-color: #ED2F48;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          overflow: hidden;
+          top: 0;
+          left: 0; }
       .works-filter-section .works-filter-container .main .view-tenth img {
         -webkit-transition: all 0.7s ease-in-out;
         -moz-transition: all 0.7s ease-in-out;
@@ -1807,7 +1811,7 @@ a.logo-home {
           -o-transition: all 0.5s linear;
           -ms-transition: all 0.5s linear;
           transition: all 0.5s linear; }
-        .works-filter-section .works-filter-container .main .view-tenth .mask a.info {
+        .works-filter-section .works-filter-container .main .view-tenth .mask .info {
           -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
           filter: alpha(opacity=0);
           opacity: 0;
@@ -1821,7 +1825,7 @@ a.logo-home {
           -o-transition: all 0.5s linear;
           -ms-transition: all 0.5s linear;
           transition: all 0.5s linear; }
-      .works-filter-section .works-filter-container .main .view-tenth:hover h2, .works-filter-section .works-filter-container .main .view-tenth:hover p, .works-filter-section .works-filter-container .main .view-tenth:hover a.info {
+      .works-filter-section .works-filter-container .main .view-tenth:hover h2, .works-filter-section .works-filter-container .main .view-tenth:hover p, .works-filter-section .works-filter-container .main .view-tenth:hover .info {
         -webkit-transform: scale(1);
         -moz-transform: scale(1);
         -o-transform: scale(1);
@@ -2109,7 +2113,8 @@ a.logo-home {
   .landing .stc-container #technology {
     top: 0;
     margin: 0 0% 50px 0px;
-    padding-left: 0px; }
+    padding-left: 0px;
+    left: 0; }
   .landing .case-study-container .main .view {
     width: 80%;
     margin: 0 10%; }
@@ -2232,14 +2237,17 @@ a.logo-home {
       margin-top: 5px; }
   .landing .circle-section .circle-container .text-container .arrow-small, .landing .circle-section .circle-container .text-container .ideer {
     width: 28%; }
-  .landing .case-study-container .main .view-tenth .mask h2 {
-    margin: 15px;
-    font-size: 30px; }
-  .landing .case-study-container .main .view-tenth .mask a.info {
-    bottom: 10px;
-    right: 10px; }
-    .landing .case-study-container .main .view-tenth .mask a.info img {
-      width: 60px !important; }
+  .landing .case-study-container .main .view-tenth {
+    width: 100%;
+    margin: 0; }
+    .landing .case-study-container .main .view-tenth .mask h2 {
+      margin: 15px;
+      font-size: 30px; }
+    .landing .case-study-container .main .view-tenth .mask a.info {
+      bottom: 10px;
+      right: 10px; }
+      .landing .case-study-container .main .view-tenth .mask a.info img {
+        width: 60px !important; }
 
   .typewriter-banner h3 {
     font-size: 26px; }

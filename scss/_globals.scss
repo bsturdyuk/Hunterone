@@ -83,11 +83,12 @@ ul {
   stroke-dashoffset: 33;
 }
 
-.btn-cta:hover {
+.btn-cta:hover, .btn-cta:active, .btn-cta:focus {
   color: #fff;
   font-size: 15px;
   letter-spacing: 1px;
   font-weight: bold;
+  text-decoration: none;
 }
 
 

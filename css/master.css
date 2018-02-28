@@ -1966,34 +1966,31 @@ a.logo-home {
   .landing .circle-section .circle-container .text-container {
     left: 20%; }
 
-  .what-we-do-section .circle-container {
-    width: 350px;
-    height: 350px; }
-    .what-we-do-section .circle-container .arrow-container .arrow-left {
-      top: 46%;
-      width: 250px;
-      left: -20%; }
-    .what-we-do-section .circle-container .arrow-container .arrow-right {
-      top: 84px;
-      width: 250px;
-      right: -12.5%; }
-    .what-we-do-section .circle-container .arrow-container .arrow-bottom {
-      top: 68.3%;
-      width: 250px;
-      left: 41%; }
-  .what-we-do-section .social-container h1, .what-we-do-section .technology-container h1, .what-we-do-section .creative-container h1 {
-    font-size: 45px;
-    line-height: 55px; }
-  .what-we-do-section .social-container {
-    width: 21%;
-    position: absolute;
-    top: 52%;
-    left: 8%; }
-  .what-we-do-section .technology-container {
-    width: 23%; }
-  .what-we-do-section .creative-container {
-    top: 700px;
-    margin-top: 0; }
+  .what-we-do-section {
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+    justify-self: start;
+    align-self: start;
+    margin: 0 5%; }
+    .what-we-do-section .social-container, .what-we-do-section .technology-container, .what-we-do-section .creative-container {
+      position: static;
+      width: auto; }
+    .what-we-do-section .creative-container {
+      margin: 0; }
+    .what-we-do-section .circle-container {
+      width: 300px;
+      height: 300px;
+      margin: auto; }
+      .what-we-do-section .circle-container .circle-animation {
+        top: -100px; }
+      .what-we-do-section .circle-container .arrow-container {
+        display: none; }
+    .what-we-do-section .social-container h1, .what-we-do-section .technology-container h1, .what-we-do-section .creative-container h1 {
+      font-size: 45px;
+      line-height: 55px; }
 
   .project-jumbo .project-title h1 {
     font-size: 45px; } }
@@ -2047,29 +2044,6 @@ a.logo-home {
 
   .typewriter-banner {
     margin-bottom: 150px; }
-
-  .what-we-do-section {
-    height: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 50px;
-    grid-row-gap: 50px;
-    justify-self: start;
-    align-self: start;
-    margin: 0 5%; }
-    .what-we-do-section .social-container, .what-we-do-section .technology-container, .what-we-do-section .creative-container {
-      position: static;
-      width: auto; }
-    .what-we-do-section .creative-container {
-      margin: 0; }
-    .what-we-do-section .circle-container {
-      width: 300px;
-      height: 300px;
-      margin: auto; }
-      .what-we-do-section .circle-container .circle-animation {
-        top: -100px; }
-      .what-we-do-section .circle-container .arrow-container {
-        display: none; }
 
   .works-filter-container .main .view h2 {
     line-height: 40px; }

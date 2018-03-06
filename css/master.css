@@ -1238,6 +1238,11 @@ a.logo-home {
               -o-transform: scale(1);
               -ms-transform: scale(1);
               transform: scale(1); }
+  .landing .case-study-container .cta-container {
+    margin: 80px auto;
+    text-align: center; }
+    .landing .case-study-container .cta-container .btn-cta svg rect {
+      stroke: #31BBAC; }
 
 .typewriter-banner {
   text-align: center;

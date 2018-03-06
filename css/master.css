@@ -1166,142 +1166,78 @@ a.logo-home {
     left: 104px; }
 .landing .case-study-container {
   height: auto; }
-  .landing .case-study-container .main .view {
-    display: inline-block;
-    width: 48%;
-    height: auto;
-    margin: 5px;
-    float: none;
-    overflow: hidden;
-    position: relative;
-    text-align: center;
-    cursor: default;
-    background-color: #ED2F48; }
-    .landing .case-study-container .main .view .cs-bg-img {
-      display: block;
+  .landing .case-study-container .main {
+    width: 100%;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    justify-items: start;
+    align-items: start;
+    height: auto; }
+    .landing .case-study-container .main .holder {
       position: relative;
-      margin: auto;
-      height: 65vh;
-      width: 100%; }
-    .landing .case-study-container .main .view h2 {
-      text-transform: none;
-      color: #fff;
-      text-align: left;
-      position: relative;
-      font-size: 36px; }
-    .landing .case-study-container .main .view p {
-      font-size: 15px;
-      position: relative;
-      color: #fff;
-      padding: 0px 40px 0px;
-      text-align: left;
-      margin: 0;
-      line-height: 22px; }
-    .landing .case-study-container .main .view p.description {
-      margin-top: 30px; }
-    .landing .case-study-container .main .view .info {
-      display: inline-block;
-      text-decoration: none;
-      padding: 7px 14px;
-      background: #000;
-      color: #fff;
-      text-transform: uppercase;
-      position: absolute;
-      bottom: 30px;
-      right: 30px;
-      text-align: left;
-      background-color: transparent; }
-      .landing .case-study-container .main .view .info img.cta-arrow {
-        width: 100px;
-        opacity: 1;
-        -webkit-transform: scale(1);
-        -moz-transform: scale(1);
-        -o-transform: scale(1);
-        -ms-transform: scale(1);
-        transform: scale(1); }
-  .landing .case-study-container .main .view .mask, .landing .case-study-container .main .view .content {
-    width: auto;
-    height: 100%;
-    position: absolute;
-    overflow: hidden;
-    top: 0;
-    left: 0; }
-  .landing .case-study-container .main .view-tenth:hover {
-    cursor: pointer; }
-    .landing .case-study-container .main .view-tenth:hover .cs-bg-img {
-      -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
-      filter: alpha(opacity=0);
-      opacity: 0; }
-  .landing .case-study-container .main .view-tenth .cs-bg-img {
-    -webkit-transition: all 0.7s ease-in-out;
-    -moz-transition: all 0.7s ease-in-out;
-    -o-transition: all 0.7s ease-in-out;
-    -ms-transition: all 0.7s ease-in-out;
-    transition: all 0.7s ease-in-out; }
-  .landing .case-study-container .main .view-tenth .mask {
-    -webkit-transition: all 0.5s linear;
-    -moz-transition: all 0.5s linear;
-    -o-transition: all 0.5s linear;
-    -ms-transition: all 0.5s linear;
-    transition: all 0.5s linear; }
-    .landing .case-study-container .main .view-tenth .mask h2 {
-      background: transparent;
-      margin: 20px 40px;
-      -webkit-transform: scale(0);
-      -moz-transform: scale(0);
-      -o-transform: scale(0);
-      -ms-transform: scale(0);
-      transform: scale(0);
-      -webkit-transition: all 0.5s linear;
-      -moz-transition: all 0.5s linear;
-      -o-transition: all 0.5s linear;
-      -ms-transition: all 0.5s linear;
-      transition: all 0.5s linear;
-      -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
-      filter: alpha(opacity=0);
-      opacity: 0; }
-    .landing .case-study-container .main .view-tenth .mask p {
-      -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
-      filter: alpha(opacity=0);
-      opacity: 0;
-      -webkit-transform: scale(0);
-      -moz-transform: scale(0);
-      -o-transform: scale(0);
-      -ms-transform: scale(0);
-      transform: scale(0);
-      -webkit-transition: all 0.5s linear;
-      -moz-transition: all 0.5s linear;
-      -o-transition: all 0.5s linear;
-      -ms-transition: all 0.5s linear;
-      transition: all 0.5s linear; }
-    .landing .case-study-container .main .view-tenth .mask .info {
-      -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
-      filter: alpha(opacity=0);
-      opacity: 0;
-      -webkit-transform: scale(0);
-      -moz-transform: scale(0);
-      -o-transform: scale(0);
-      -ms-transform: scale(0);
-      transform: scale(0);
-      -webkit-transition: all 0.5s linear;
-      -moz-transition: all 0.5s linear;
-      -o-transition: all 0.5s linear;
-      -ms-transition: all 0.5s linear;
-      transition: all 0.5s linear; }
-  .landing .case-study-container .main .view-tenth:hover h2, .landing .case-study-container .main .view-tenth:hover p, .landing .case-study-container .main .view-tenth:hover .info {
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -o-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
-    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
-    filter: alpha(opacity=100);
-    opacity: 1; }
-  .landing .case-study-container .cta-container {
-    margin: 80px auto;
-    text-align: center; }
-    .landing .case-study-container .cta-container .btn-cta svg rect {
-      stroke: #31BBAC; }
+      width: 100%;
+      flex: 0 0 100%;
+      max-width: 100%; }
+      .landing .case-study-container .main .holder .view {
+        padding-bottom: 80%; }
+        .landing .case-study-container .main .holder .view .cs-bg-img {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          z-index: 0;
+          flex-direction: column; }
+        .landing .case-study-container .main .holder .view .mask {
+          display: flex;
+          flex-direction: column;
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          opacity: 0;
+          background: #ED2F48;
+          padding: 40px;
+          -moz-user-select: -moz-none;
+          -ms-user-select: none;
+          -webkit-user-select: none;
+          user-select: none;
+          -moz-transition-delay: 0.25s;
+          -o-transition-delay: 0.25s;
+          -webkit-transition-delay: 0.25s;
+          transition-delay: 0.25s;
+          text-decoration: none;
+          color: white;
+          transition: all .33s ease-in; }
+          .landing .case-study-container .main .holder .view .mask h2 {
+            font-size: 36px;
+            margin: 0 0 20px 0;
+            line-height: 40px; }
+          .landing .case-study-container .main .holder .view .mask p {
+            font-size: 15px; }
+          .landing .case-study-container .main .holder .view .mask h2, .landing .case-study-container .main .holder .view .mask p {
+            -webkit-transform: scale(0);
+            -moz-transform: scale(0);
+            -o-transform: scale(0);
+            -ms-transform: scale(0);
+            transform: scale(0);
+            -webkit-transition: all 0.5s linear;
+            -moz-transition: all 0.5s linear;
+            -o-transition: all 0.5s linear;
+            -ms-transition: all 0.5s linear;
+            transition: all 0.5s linear; }
+          .landing .case-study-container .main .holder .view .mask:hover {
+            opacity: 1; }
+            .landing .case-study-container .main .holder .view .mask:hover h2, .landing .case-study-container .main .holder .view .mask:hover p {
+              -webkit-transform: scale(1);
+              -moz-transform: scale(1);
+              -o-transform: scale(1);
+              -ms-transform: scale(1);
+              transform: scale(1); }
 
 .typewriter-banner {
   text-align: center;
@@ -1331,7 +1267,7 @@ a.logo-home {
     align-self: center;
     margin: 100px 0; }
     .clients-mobile .icon-client-mob {
-      max-width: 160px;
+      max-width: 120px;
       margin: 0 auto; } }
 .lets-hunt-section {
   background-color: #31BBAC;
@@ -1704,139 +1640,75 @@ a.logo-home {
   .works-filter-section .works-filter-container {
     margin-top: 100px; }
     .works-filter-section .works-filter-container .main {
+      width: 100%;
       display: grid;
       grid-template-rows: auto;
       grid-template-columns: 1fr 1fr;
       grid-column-gap: 0px;
       grid-row-gap: 0px;
       justify-items: start;
-      align-items: start; }
-      .works-filter-section .works-filter-container .main .view {
-        display: inline-block;
+      align-items: start;
+      height: auto; }
+      .works-filter-section .works-filter-container .main .holder {
+        position: relative;
         width: 100%;
-        max-height: 400px;
-        overflow: hidden;
-        cursor: default;
-        position: relative; }
-        .works-filter-section .works-filter-container .main .view .view-bg-img {
-          width: 100%;
-          height: 400px; }
-        .works-filter-section .works-filter-container .main .view .mask h2 {
-          text-transform: none;
-          color: #fff;
-          text-align: left;
-          position: relative;
-          font-size: 36px; }
-        .works-filter-section .works-filter-container .main .view .mask p {
-          font-size: 15px;
-          position: relative;
-          color: #fff;
-          padding: 0px 40px 0px;
-          text-align: left;
-          margin: 0;
-          line-height: 22px; }
-        .works-filter-section .works-filter-container .main .view .mask p.description {
-          margin-top: 30px; }
-        .works-filter-section .works-filter-container .main .view .mask .info {
-          display: inline-block;
-          text-decoration: none;
-          padding: 7px 14px;
-          background: #000;
-          color: #fff;
-          text-transform: uppercase;
-          position: absolute;
-          bottom: 30px;
-          right: 30px;
-          text-align: left;
-          background-color: transparent; }
-          .works-filter-section .works-filter-container .main .view .mask .info img.cta-arrow {
-            width: 100px;
-            opacity: 1;
-            -webkit-transform: scale(1);
-            -moz-transform: scale(1);
-            -o-transform: scale(1);
-            -ms-transform: scale(1);
-            transform: scale(1);
-            display: block; }
-      .works-filter-section .works-filter-container .main .view-tenth:hover {
-        cursor: pointer; }
-        .works-filter-section .works-filter-container .main .view-tenth:hover img {
-          -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
-          filter: alpha(opacity=0);
-          opacity: 0; }
-        .works-filter-section .works-filter-container .main .view-tenth:hover .mask {
-          background-color: #ED2F48;
-          width: 100%;
-          height: 100%;
-          position: absolute;
-          overflow: hidden;
-          top: 0;
-          left: 0; }
-      .works-filter-section .works-filter-container .main .view-tenth img {
-        -webkit-transition: all 0.7s ease-in-out;
-        -moz-transition: all 0.7s ease-in-out;
-        -o-transition: all 0.7s ease-in-out;
-        -ms-transition: all 0.7s ease-in-out;
-        transition: all 0.7s ease-in-out; }
-      .works-filter-section .works-filter-container .main .view-tenth .mask {
-        -webkit-transition: all 0.5s linear;
-        -moz-transition: all 0.5s linear;
-        -o-transition: all 0.5s linear;
-        -ms-transition: all 0.5s linear;
-        transition: all 0.5s linear; }
-        .works-filter-section .works-filter-container .main .view-tenth .mask h2 {
-          background: transparent;
-          margin: 20px 40px;
-          -webkit-transform: scale(0);
-          -moz-transform: scale(0);
-          -o-transform: scale(0);
-          -ms-transform: scale(0);
-          transform: scale(0);
-          -webkit-transition: all 0.5s linear;
-          -moz-transition: all 0.5s linear;
-          -o-transition: all 0.5s linear;
-          -ms-transition: all 0.5s linear;
-          transition: all 0.5s linear;
-          -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
-          filter: alpha(opacity=0);
-          opacity: 0; }
-        .works-filter-section .works-filter-container .main .view-tenth .mask p {
-          -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
-          filter: alpha(opacity=0);
-          opacity: 0;
-          -webkit-transform: scale(0);
-          -moz-transform: scale(0);
-          -o-transform: scale(0);
-          -ms-transform: scale(0);
-          transform: scale(0);
-          -webkit-transition: all 0.5s linear;
-          -moz-transition: all 0.5s linear;
-          -o-transition: all 0.5s linear;
-          -ms-transition: all 0.5s linear;
-          transition: all 0.5s linear; }
-        .works-filter-section .works-filter-container .main .view-tenth .mask .info {
-          -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
-          filter: alpha(opacity=0);
-          opacity: 0;
-          -webkit-transform: scale(0);
-          -moz-transform: scale(0);
-          -o-transform: scale(0);
-          -ms-transform: scale(0);
-          transform: scale(0);
-          -webkit-transition: all 0.5s linear;
-          -moz-transition: all 0.5s linear;
-          -o-transition: all 0.5s linear;
-          -ms-transition: all 0.5s linear;
-          transition: all 0.5s linear; }
-      .works-filter-section .works-filter-container .main .view-tenth:hover h2, .works-filter-section .works-filter-container .main .view-tenth:hover p, .works-filter-section .works-filter-container .main .view-tenth:hover .info {
-        -webkit-transform: scale(1);
-        -moz-transform: scale(1);
-        -o-transform: scale(1);
-        -ms-transform: scale(1);
-        transform: scale(1);
-        -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
-        filter: alpha(opacity=100);
-        opacity: 1; }
+        flex: 0 0 100%;
+        max-width: 100%; }
+        .works-filter-section .works-filter-container .main .holder .view {
+          padding-bottom: 60%; }
+          .works-filter-section .works-filter-container .main .holder .view .cs-bg-img {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            z-index: 0;
+            flex-direction: column; }
+          .works-filter-section .works-filter-container .main .holder .view .mask {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            opacity: 0;
+            background: #ED2F48;
+            padding: 30px 60px;
+            -moz-user-select: -moz-none;
+            -ms-user-select: none;
+            -webkit-user-select: none;
+            user-select: none;
+            -moz-transition-delay: 0.25s;
+            -o-transition-delay: 0.25s;
+            -webkit-transition-delay: 0.25s;
+            transition-delay: 0.25s;
+            text-decoration: none;
+            color: white;
+            transition: all .33s ease-in; }
+            .works-filter-section .works-filter-container .main .holder .view .mask h2 {
+              font-size: 36px; }
+            .works-filter-section .works-filter-container .main .holder .view .mask p {
+              font-size: 15px; }
+            .works-filter-section .works-filter-container .main .holder .view .mask h2, .works-filter-section .works-filter-container .main .holder .view .mask p {
+              -webkit-transform: scale(0);
+              -moz-transform: scale(0);
+              -o-transform: scale(0);
+              -ms-transform: scale(0);
+              transform: scale(0);
+              -webkit-transition: all 0.5s linear;
+              -moz-transition: all 0.5s linear;
+              -o-transition: all 0.5s linear;
+              -ms-transition: all 0.5s linear;
+              transition: all 0.5s linear; }
+            .works-filter-section .works-filter-container .main .holder .view .mask:hover {
+              opacity: 1; }
+              .works-filter-section .works-filter-container .main .holder .view .mask:hover h2, .works-filter-section .works-filter-container .main .holder .view .mask:hover p {
+                -webkit-transform: scale(1);
+                -moz-transform: scale(1);
+                -o-transform: scale(1);
+                -ms-transform: scale(1);
+                transform: scale(1); }
 
 .contact-form-container {
   background-color: #31BBAC;
@@ -1956,8 +1828,6 @@ a.logo-home {
   #nav-icon span:nth-child(4) {
     background-color: red !important; }
 
-  .landing .case-study-container .main .view .cs-bg-img {
-    height: 45vh; }
   .landing .case-study-container .main .view h2 {
     line-height: 44px; }
   .landing .case-study-container .main .view p {
@@ -2012,12 +1882,6 @@ a.logo-home {
       left: 5%; }
   .landing .stc-container {
     margin-top: 0; }
-  .landing .case-study-container .main .view {
-    width: 47%; }
-    .landing .case-study-container .main .view .cs-bg-img {
-      height: 35vh; }
-    .landing .case-study-container .main .view .mask a.info img.cta-arrow {
-      width: 80px !important; }
   .landing .case-study-container .main .view-tenth h2 {
     border-bottom: none !important;
     font-size: 40px;
@@ -2096,20 +1960,8 @@ a.logo-home {
     margin: 0 0% 50px 0px;
     padding-left: 0px;
     left: 0; }
-  .landing .case-study-container .main .view {
-    width: 80%;
-    margin: 0 10% 30px; }
-    .landing .case-study-container .main .view .mask {
-      position: static; }
-      .landing .case-study-container .main .view .mask h2 {
-        -webkit-transform: scale(1);
-        -moz-transform: scale(1);
-        -o-transform: scale(1);
-        -ms-transform: scale(1);
-        transform: scale(1);
-        opacity: 1; }
-    .landing .case-study-container .main .view:hover .cs-bg-img {
-      opacity: 1; }
+  .landing .case-study-container .main {
+    grid-template-columns: 1fr; }
 
   .work-hard-section .whph-container {
     padding: 0;
@@ -2170,8 +2022,8 @@ a.logo-home {
     .what-we-do-section .circle-container {
       display: none; }
 
-  .works-filter-container .main .view p.description {
-    display: none; }
+  .works-filter-container .main {
+    grid-template-columns: 1fr !important; }
 
   .contact-form-container .cf-field p {
     float: none !important; }
@@ -2214,6 +2066,30 @@ a.logo-home {
     .main-nav #parent #wrapper:hover #child {
       transform: translateX(425%); }
 
+  html {
+    overflow-x: hidden; }
+
+  .site-container {
+    width: 100%;
+    margin: 0; }
+    .site-container .landing {
+      padding-left: 15%;
+      overflow: hidden; }
+      .site-container .landing .about-section {
+        padding-right: 10%; }
+      .site-container .landing .circle-section .circle-container .circle-animation {
+        width: 70%;
+        height: 70%;
+        left: -115px;
+        top: -200px; }
+      .site-container .landing .circle-section .circle-container .text-container {
+        left: 120px !important;
+        width: 380px !important;
+        top: 320px; }
+
+  .clients-mobile {
+    padding: 0 15%; }
+
   .landing .circle-section .circle-container .text-container .lets-hunt h1 {
     font-size: 85px !important;
     margin-bottom: 10px !important; }
@@ -2229,17 +2105,19 @@ a.logo-home {
       margin-top: 5px; }
   .landing .circle-section .circle-container .text-container .arrow-small, .landing .circle-section .circle-container .text-container .ideer {
     width: 28%; }
-  .landing .case-study-container .main .view-tenth {
-    width: 100%;
-    margin: 0 0 30px; }
-    .landing .case-study-container .main .view-tenth .mask h2 {
-      margin: 15px;
-      font-size: 30px; }
-    .landing .case-study-container .main .view-tenth .mask a.info {
-      bottom: 10px;
-      right: 10px; }
-      .landing .case-study-container .main .view-tenth .mask a.info img {
-        width: 60px !important; }
+  .landing .case-study-container {
+    padding-right: 15%; }
+    .landing .case-study-container .main .view-tenth {
+      width: 100%;
+      margin: 0 0 30px; }
+      .landing .case-study-container .main .view-tenth .mask h2 {
+        margin: 15px;
+        font-size: 30px; }
+      .landing .case-study-container .main .view-tenth .mask a.info {
+        bottom: 10px;
+        right: 10px; }
+        .landing .case-study-container .main .view-tenth .mask a.info img {
+          width: 60px !important; }
 
   .typewriter-banner h3 {
     font-size: 26px; }
@@ -2288,21 +2166,24 @@ a.logo-home {
       width: 115px !important;
       height: 115px !important; }
 
-  .works-filter-container .main {
-    grid-template-columns: 1fr !important; }
-
   .contact-form-container .cf-checkbox label {
     width: 100%; }
 
   .contact-lower .become-hunter h2 {
     text-align: left; }
 
+  .project-content .site-container {
+    padding: 0 15%; }
+
   .project-jumbo .project-title h1 {
     font-size: 35px;
     line-height: 45px; }
 
   .project-content .issue .social-media-container p {
-    display: block; } }
+    display: block; }
+
+  .contact-form-container .site-container, .contact-lower .site-container {
+    padding: 0 15%; } }
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
   #nav-icon span:nth-child(4) {

@@ -1795,10 +1795,31 @@ a.logo-home {
       display: block; }
 
 .project-jumbo {
-  background: url("../img/project.jpg") no-repeat center;
-  background-size: cover;
-  height: 90vh;
-  margin-top: 150px; }
+  margin-top: 150px;
+  width: 100%;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  justify-items: start;
+  align-items: start;
+  height: auto; }
+  .project-jumbo .holder {
+    position: relative;
+    width: 100%;
+    flex: 0 0 100%;
+    max-width: 100%; }
+    .project-jumbo .holder .view {
+      padding-bottom: 32%; }
+      .project-jumbo .holder .view .project-bg-img {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        z-index: 0;
+        flex-direction: column; }
   .project-jumbo .project-title {
     background-color: #ED2F48;
     width: 50%;
@@ -1868,7 +1889,18 @@ a.logo-home {
       line-height: 55px; }
 
   .project-jumbo .project-title h1 {
-    font-size: 45px; } }
+    font-size: 45px; }
+
+  .works-filter-section .works-filter-container .main .holder .view .mask {
+    padding: 30px; }
+    .works-filter-section .works-filter-container .main .holder .view .mask h2 {
+      font-size: 30px;
+      line-height: 40px;
+      margin: 0 0 10px 0; }
+    .works-filter-section .works-filter-container .main .holder .view .mask p {
+      font-size: 14px;
+      line-height: 17px;
+      margin-bottom: 6px; } }
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
   #nav-icon span:nth-child(4) {
@@ -1914,8 +1946,16 @@ a.logo-home {
   .typewriter-banner {
     margin-bottom: 150px; }
 
-  .works-filter-container .main .view h2 {
-    line-height: 40px; }
+  .works-filter-section .works-filter-container .main .holder .view .mask {
+    padding: 20px; }
+    .works-filter-section .works-filter-container .main .holder .view .mask h2 {
+      font-size: 24px;
+      line-height: 40px;
+      margin: 0 0 10px 0; }
+    .works-filter-section .works-filter-container .main .holder .view .mask p {
+      font-size: 12px;
+      line-height: 17px;
+      margin-bottom: 6px; }
 
   .project-jumbo .project-title {
     width: 60%; }
@@ -2030,6 +2070,17 @@ a.logo-home {
   .works-filter-container .main {
     grid-template-columns: 1fr !important; }
 
+  .works-filter-section .works-filter-container .main .holder .view .mask {
+    padding: 30px; }
+    .works-filter-section .works-filter-container .main .holder .view .mask h2 {
+      font-size: 30px;
+      line-height: 50px;
+      margin: 0 0 20px 0; }
+    .works-filter-section .works-filter-container .main .holder .view .mask p {
+      font-size: 15px;
+      line-height: 18px;
+      margin-bottom: 10px; }
+
   .contact-form-container .cf-field p {
     float: none !important; }
   .contact-form-container .cf-field .text-input {
@@ -2038,11 +2089,15 @@ a.logo-home {
     width: 48%; }
 
   .project-jumbo .project-title {
-    width: 90%; }
+    width: 100%;
+    top: 307px;
+    padding: 10px 20px; }
 
-  .project-content .solutions {
-    padding-left: 0;
-    margin-top: 50px; }
+  .project-content {
+    margin: 50% 0; }
+    .project-content .solutions {
+      padding-left: 0;
+      margin-top: 50px; }
 
   footer {
     height: auto; }
@@ -2171,21 +2226,34 @@ a.logo-home {
       width: 115px !important;
       height: 115px !important; }
 
+  .works-filter-section .works-filter-container .main .holder .view .mask {
+    padding: 15px; }
+    .works-filter-section .works-filter-container .main .holder .view .mask h2 {
+      font-size: 20px;
+      line-height: 30px;
+      margin: 0 0 5px 0; }
+    .works-filter-section .works-filter-container .main .holder .view .mask p {
+      font-size: 12px;
+      line-height: 17px;
+      margin-bottom: 6px; }
+
+  .project-jumbo .holder .view {
+    padding-bottom: 50%; }
+    .project-jumbo .holder .view .project-title h1 {
+      font-size: 35px;
+      line-height: 45px; }
+
+  .project-content .site-container {
+    padding: 0 15%; }
+
+  .project-content .issue .social-media-container p {
+    display: block; }
+
   .contact-form-container .cf-checkbox label {
     width: 100%; }
 
   .contact-lower .become-hunter h2 {
     text-align: left; }
-
-  .project-content .site-container {
-    padding: 0 15%; }
-
-  .project-jumbo .project-title h1 {
-    font-size: 35px;
-    line-height: 45px; }
-
-  .project-content .issue .social-media-container p {
-    display: block; }
 
   .contact-form-container .site-container, .contact-lower .site-container {
     padding: 0 15%; } }

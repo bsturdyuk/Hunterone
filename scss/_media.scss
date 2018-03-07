@@ -69,6 +69,22 @@
         }
       }
 
+      // Our Projects
+      .works-filter-section .works-filter-container .main .holder .view .mask {
+        padding: 30px;
+
+        h2 {
+          font-size: 30px;
+          line-height: 40px;
+          margin: 0 0 10px 0;
+        }
+        p {
+          font-size: 14px;
+          line-height: 17px;
+          margin-bottom: 6px;
+        }
+      }
+
     }
 
     /* Medium Devices, Desktops */
@@ -150,9 +166,19 @@
 
 
       //our-projects
-      .works-filter-container .main .view {
+
+      .works-filter-section .works-filter-container .main .holder .view .mask {
+        padding: 20px;
+
         h2 {
+          font-size: 24px;
           line-height: 40px;
+          margin: 0 0 10px 0;
+        }
+        p {
+          font-size: 12px;
+          line-height: 17px;
+          margin-bottom: 6px;
         }
       }
 
@@ -359,6 +385,21 @@
         }
       }
 
+      .works-filter-section .works-filter-container .main .holder .view .mask {
+        padding: 30px;
+
+        h2 {
+          font-size: 30px;
+          line-height: 50px;
+          margin: 0 0 20px 0;
+        }
+        p {
+          font-size: 15px;
+          line-height: 18px;
+          margin-bottom: 10px;
+        }
+      }
+
       //contact
       .contact-form-container {
         .cf-field {
@@ -375,14 +416,18 @@
       }
 
       //Project
-      .project-jumbo {
-        .project-title {
-          width: 90%;
-        }
+      .project-jumbo .project-title {
+          width: 100%;
+          top: 307px;
+          padding: 10px 20px;
       }
-      .project-content .solutions {
-        padding-left: 0;
-        margin-top: 50px;
+      .project-content {
+        margin: 50% 0;
+
+          .solutions {
+          padding-left: 0;
+          margin-top: 50px;
+        }
       }
 
       // footer
@@ -608,6 +653,46 @@
 
 
       // Our Projects
+      .works-filter-section .works-filter-container .main .holder .view .mask {
+        padding: 15px;
+
+        h2 {
+          font-size: 20px;
+          line-height: 30px;
+          margin: 0 0 5px 0;
+        }
+        p {
+          font-size: 12px;
+          line-height: 17px;
+          margin-bottom: 6px;
+        }
+      }
+
+
+      // Project
+      .project-jumbo .holder .view {
+        padding-bottom: 50%;
+
+        .project-title {
+
+            h1 {
+            font-size: 35px;
+            line-height: 45px;
+          }
+        }
+      }
+      .project-content  {
+        .site-container {
+          padding: 0 15%;
+        }
+      }
+
+      .project-content .issue .social-media-container p {
+        display: block;
+      }
+
+
+      // Contact
       .contact-form-container {
         .cf-checkbox label {
           width: 100%;
@@ -616,24 +701,6 @@
       .contact-lower .become-hunter h2 {
         text-align: left;
       }
-
-
-      // Project
-      .project-content  {
-        .site-container {
-          padding: 0 15%;
-        }
-      }
-      .project-jumbo .project-title h1 {
-        font-size: 35px;
-        line-height: 45px;
-      }
-      .project-content .issue .social-media-container p {
-        display: block;
-      }
-
-
-      // Contact
       .contact-form-container, .contact-lower {
         .site-container {
           padding: 0 15%;
